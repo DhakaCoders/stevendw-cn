@@ -1,0 +1,49 @@
+body.home{
+	background: #0e0e0e;
+}
+.hm-banner{
+	position: relative;
+}
+.hm-banner-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.hm-banner-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	background-position: center center!important;
+	background-size: cover!important;
+	background-repeat: repeat!important;
+}
+.hm-banner-cntlr{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 1128px;
+	position: relative;
+	z-index: 3;
+}
+.hm-bnr-desc{
+	max-width: 872px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+.hm-bnr-title.fl-h1{
+	margin-bottom: 25px;
+	color: #fff;
+	text-align: center;
+}
+.hm-bnr-desc p{
+	font-size: 24px;
+	text-align: center;
+	color: #ACAFB0;
+}
