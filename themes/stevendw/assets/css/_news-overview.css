@@ -1,0 +1,23 @@
+.news-overview-grid-des {
+    margin-top: 53px;
+}
+.news-overview-des-rgt {
+    padding-left: 90px;
+    position: relative;
+}
+
+.news-overview-des-lft {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.news-overview-grid-items-cntlr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.news-overview-grid-item {
+    width: 50%;
+    padding: 0 12px;
+}
