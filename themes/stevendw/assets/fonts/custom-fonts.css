@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('LatoRegular/LatoRegular.eot');
-    src: url('LatoRegular/LatoRegular.eot') format('embedded-opentype'),
-         url('LatoRegular/LatoRegular.woff2') format('woff2'),
-         url('LatoRegular/LatoRegular.woff') format('woff'),
-         url('LatoRegular/LatoRegular.ttf') format('truetype'),
-         url('LatoRegular/LatoRegular.svg#LatoRegular') format('svg');
+    font-family: 'Aldo-SemiBold';
+    src: url('Aldo-SemiBold/Aldo-SemiBold.eot');
+    src: url('Aldo-SemiBold/Aldo-SemiBold.eot') format('embedded-opentype'),
+         url('Aldo-SemiBold/Aldo-SemiBold.woff2') format('woff2'),
+         url('Aldo-SemiBold/Aldo-SemiBold.woff') format('woff'),
+         url('Aldo-SemiBold/Aldo-SemiBold.ttf') format('truetype'),
+         url('Aldo-SemiBold/Aldo-SemiBold.svg#LatoRegular') format('svg');
     font-weight: normal;
 }

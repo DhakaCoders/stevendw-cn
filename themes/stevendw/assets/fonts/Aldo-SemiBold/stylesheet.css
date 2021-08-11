@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Aldo';
+    src: url('Aldo-SemiBold.eot');
+    src: url('Aldo-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Aldo-SemiBold.woff2') format('woff2'),
+        url('Aldo-SemiBold.woff') format('woff'),
+        url('Aldo-SemiBold.ttf') format('truetype'),
+        url('Aldo-SemiBold.svg#Aldo-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
