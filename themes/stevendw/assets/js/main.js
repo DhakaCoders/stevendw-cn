@@ -246,7 +246,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if( $('.news-overview-grid-items-cntlr').length ){
         $('.news-overview-grid-items-cntlr').masonry({
           // options
-          itemSelector: '.news-overview-grid-item',
+          itemSelector: '.sdw-masonry-item',
         });
       };
 
