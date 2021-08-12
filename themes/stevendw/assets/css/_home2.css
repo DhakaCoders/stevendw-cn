@@ -1,11 +1,13 @@
-.page-bnr-cntlr{
+.page-banner-cntlr{
 	position: relative;
 	text-align: center;
 }
-.page-bnr{
+.page-banner{
 	height: 440px;
+	position: relative;
+	overflow: hidden;
 }
-.page-bnr-bg{
+.page-banner-bg{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -27,5 +29,6 @@
 	color: #fff;
 }
 .page-bnr-title{
-	padding-bottom: 90px;
+	padding-bottom: 110px;
+	margin-bottom: 0;
 }
