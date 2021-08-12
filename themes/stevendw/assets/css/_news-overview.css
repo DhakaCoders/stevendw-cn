@@ -70,6 +70,7 @@ strong.nov-post-date {
     padding-bottom: 140px;
 }
 .news-overview-grid-img-cntlr{
+    position: relative;
     overflow: hidden;
 }
 .news-overview-grid-item-inner:hover .news-overview-grid-img-cntlr img{
