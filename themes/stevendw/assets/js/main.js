@@ -230,8 +230,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Noyon*/
+  if( $('.hm-banner-cntlr').length ){
+    var windowHeight = $(window).height();
+    if (windowHeight >= 678) {
+      $('.hm-banner-cntlr').css('height', windowHeight);
+    }
+  }
+  
 
 
+  if( $('.elementGridSlider').length ){
+    $('.elementGridSlider').slick({
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 3,
+      slidesToScroll: 1
+      });
+  }
 
 
   /*start of Shariful*/
