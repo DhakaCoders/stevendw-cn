@@ -20,6 +20,11 @@
 .innerpage-con-wrap{
 	position: relative;
 }
+.innerpage-lft-img{
+	position: absolute;
+	left: 0;
+	top: 26%;
+}
 .default-page-con {
 	padding-bottom: 100px;
 	padding-top: 90px;
@@ -36,6 +41,9 @@
 .default-page-con h5{
 	margin-bottom: 30px;
 	line-height: 1.1;
+}
+.default-page-con h2{
+	color: #141414;
 }
 
 /*.dfp-promo-module-title{
