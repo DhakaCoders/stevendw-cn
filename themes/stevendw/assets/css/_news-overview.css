@@ -60,7 +60,10 @@ strong.nov-post-date {
     font-weight: 700;
     font-family: Montserrat;
     text-transform: uppercase;
-    line-height: 16px;
+    line-height: 1;
+}
+.nov-grid-btn a:hover{
+    letter-spacing: 1px;
 }
 .news-overview-grids-sec{
     padding-top: 112px;
