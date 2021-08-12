@@ -28,6 +28,9 @@
 .news-overview-des-lft h4{
     color: #2DAB52;
 }
+.news-overview-des-lft i{
+    display: inline-block;
+}
 .news-overview-des-rgt p{
     margin-bottom: 30px;
 }
