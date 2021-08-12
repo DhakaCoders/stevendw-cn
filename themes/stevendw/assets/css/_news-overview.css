@@ -50,16 +50,8 @@ strong.nov-post-date {
 .news-overview-grid-sec-cntlr ul li:nth-child(2){
     margin-top: 120px;
 }
-.fl-read-more-btn{
-    display: inline-block;
-    vertical-align: baseline;
-    font-size: 13px;
-    font-weight: 700;
-    font-family: Montserrat;
-    text-transform: uppercase;
-    line-height: 1;
-}
-.fl-read-more-btn:hover{
+
+.sdw-grid-btn a:hover{
     letter-spacing: 1px;
 }
 .news-overview-grids-sec{
@@ -72,4 +64,9 @@ strong.nov-post-date {
 }
 .news-overview-grid-item-inner:hover .news-overview-grid-img-cntlr img{
     transform: scale(1.1);
+}
+.news-overview-grid-img-cntlr div{
+    height: 100%;
+    width: 100%;
+    display: none;
 }

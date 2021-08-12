@@ -205,6 +205,16 @@ b{
 	bottom: 0;
 }
 
+.fl-read-more-btn{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
 
 ul.reset-list,
 ol.reset-list,
