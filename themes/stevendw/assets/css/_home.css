@@ -47,3 +47,63 @@ body.home{
 	text-align: center;
 	color: #ACAFB0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+@media(max-width: 1699px){
+	.hm-banner-cntlr{
+		height: 950px;
+	}
+}
+
+@media(max-width: 1499px){
+	.hm-banner-cntlr{
+		height: 650px;
+	}
+}
+@media(max-width: 1399px){
+	
+}
+@media(max-width: 1299px){
+	
+}
+@media(max-width: 1199px){
+	
+}
+@media(max-width: 991px){
+	
+}
+@media(max-width: 767px){
+	
+}
+@media(max-width: 575px){
+	
+}
