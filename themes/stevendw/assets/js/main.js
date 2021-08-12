@@ -241,7 +241,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Keshob*/
+  //Masonry
 
+      if( $('.news-overview-grid-items-cntlr').length ){
+        $('.news-overview-grid-items-cntlr').masonry({
+          // options
+          itemSelector: '.sdw-masonry-item',
+        });
+      };
 
 
 
