@@ -7,7 +7,7 @@
     min-height: 160px;
 }
 
-.news-overview-des-post-date {
+.nod-post-date {
     position: absolute;
     left: 0;
     top: 0;
@@ -41,7 +41,7 @@ strong.nov-post-date {
     font-family: 'Aldo-SemiBold';
     color: #2DAB52;
 }
-.news-overview-des-post-date i{
+.nod-post-date i{
     display: inline-block;
 }
 .news-overview-des-inner p{
@@ -56,7 +56,8 @@ strong.nov-post-date {
 }
 .news-overview-grids-sec{
     padding-top: 112px;
-    padding-bottom: 140px;
+    padding-bottom: 43px;
+    position: relative;
 }
 .news-overview-grid-img-cntlr{
     position: relative;
