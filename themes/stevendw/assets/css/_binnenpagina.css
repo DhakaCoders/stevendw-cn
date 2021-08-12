@@ -499,6 +499,10 @@ hr{
 	padding-top: 35px;
 }
 
+#news-details .dfp-social-media-module-inr .dfp-social-media ul li a:hover svg{
+	fill: #2DAB52;
+}
+
 
 /*.referenties-detials-related-sec{
 	padding-top: 90px;
