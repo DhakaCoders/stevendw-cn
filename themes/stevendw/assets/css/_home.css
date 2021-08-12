@@ -23,6 +23,33 @@ body.home{
 	background-size: cover!important;
 	background-repeat: repeat!important;
 }
+.hm-bnr-down-scroll{
+	position: absolute;
+	z-index: 5;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+
+}
+.hm-bnr-down-scroll i{
+	display: inline-block;
+}
+.hm-bnr-scroll-title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #2DAB52;
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	display: inline-block;
+}
 .hm-banner-cntlr{
 	display: flex;
 	align-items: center;
