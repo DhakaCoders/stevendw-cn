@@ -24,6 +24,12 @@
 .news-overview-des-inner h2{
     margin-bottom: 17px;
 }
+.news-overview-des-inner h2 a{
+    color: #565B5E;
+}
+.news-overview-des-inner h2 a:hover{
+    color: #2DAB52;
+}
 strong.nov-post-date {
     font-size: 36px;
     line-height: 1;
@@ -45,10 +51,7 @@ strong.nov-post-date {
 .news-overview-grid-item{
     padding-bottom: 97px;
 }
-.fl-read-more-btn{
-    display: inline-block;
-}
-.fl-read-more-btn span{
+.nov-grid-btn a{
     display: inline-block;
     vertical-align: baseline;
     font-size: 13px;
@@ -56,4 +59,14 @@ strong.nov-post-date {
     font-family: Montserrat;
     text-transform: uppercase;
     line-height: 16px;
+}
+.news-overview-grids-sec{
+    padding-top: 112px;
+    padding-bottom: 140px;
+}
+.news-overview-grid-item{
+    overflow: hidden;
+}
+.news-overview-grid-item:hover .news-overview-grid-img-cntlr img{
+    transform: scale(1.1);
 }
