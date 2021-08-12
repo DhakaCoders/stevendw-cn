@@ -27,8 +27,67 @@
 }
 .page-bnr-des-inr{
 	color: #fff;
+	position: relative;
 }
 .page-bnr-title{
 	padding-bottom: 110px;
 	margin-bottom: 0;
+}
+
+.page-bnr-title-ctlr{
+	max-width: 830px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.has-post-date .page-bnr-title-ctlr{
+	padding-left: 105px;
+	position: relative;
+}
+.has-post-date .page-bnr-post-date{
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: left;
+}
+
+.page-bnr-post-date i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.sdw-back-btn-ctlr{
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+}
+.sdw-back-btn-ctlr a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 13px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #ACAFB0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	padding-left: 110px;
+	position: relative;
+}
+.sdw-back-btn-ctlr a i{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	margin-top: -2px;
+}
+.sdw-back-btn-ctlr a:hover{
+	color: #2DAB52;
+}
+.sdw-back-btn-ctlr a:hover i{
+	margin-left: -5px;
+}
+.sdw-back-btn-ctlr a:hover svg{
+	fill: #2DAB52;
 }
