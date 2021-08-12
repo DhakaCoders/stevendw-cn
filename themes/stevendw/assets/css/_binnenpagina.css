@@ -450,16 +450,53 @@ hr{
 	display: flex;
 	align-items: center;
 }
-#news-details .dfp-social-media-module-inr ul{
+#news-details .dfp-social-media-module-inr .dfp-social-media{
 	margin-left: auto;
+	
+}
+#news-details .dfp-social-media-module-inr .dfp-social-media ul{
 	padding-left: 0;
 	padding-bottom: 0;
+	margin-left: -15px;
+	margin-right: -15px;
 }
-#news-details .dfp-social-media-module-inr ul li{
+#news-details .dfp-social-media-module-inr .dfp-social-media ul li{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+#news-details .dfp-social-media-module-inr .dfp-social-media ul li a,
+#news-details .dfp-social-media-module-inr .dfp-social-media ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+#news-details .dfp-social-media-module-inr .dfp-social-media-title strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #141414;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+#news-details.default-page-con {
+    padding-bottom: 40px;
+    padding-top: 45px;
+}
+#news-details .dfp-plate-one-img-bx{
+	padding-top: 40px;
+}
+
+#news-details .btm-social-media .dfp-social-media-module-inr{
+	padding-top: 35px;
+	border-top: 1px solid #E9E9E9;
+}
+#news-details .dfp-social-media-module.btm-social-media{
+	padding-top: 35px;
 }
 
 
