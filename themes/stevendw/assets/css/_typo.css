@@ -6,6 +6,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-family: 'Aldo-SemiBold';
+	color: #141414;
 }
 h1,.fl-h1{
 	font-size: 96px;
