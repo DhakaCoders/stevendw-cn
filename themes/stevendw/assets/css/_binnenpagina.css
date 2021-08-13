@@ -23,8 +23,9 @@
 .innerpage-lft-img{
 	position: absolute;
 	left: 0;
-	top: 26%;
+	top: 20%;
 }
+
 .default-page-con {
 	padding-bottom: 100px;
 	padding-top: 90px;
@@ -594,6 +595,13 @@ hr{
 	.dfp-pro-slider-module {
 	    padding-bottom: 90px;
 	}
+	.innerpage-lft-img img{
+		max-width: 200px;
+		width: 100%;
+	}
+	.innerpage-lft-img {
+	    top: 19%;
+	}
 
 
 }
@@ -635,6 +643,10 @@ hr{
 	.dfp-pro-slider-module {
 	    padding-bottom: 80px;
 	}
+	.innerpage-lft-img img{
+		max-width: 150px;
+		width: 100%;
+	}
 	
 
 
@@ -673,6 +685,13 @@ hr{
 	}
 	.dfp-pro-slider-module {
 	    padding-bottom: 70px;
+	}
+	.innerpage-lft-img img{
+		max-width: 100px;
+		width: 100%;
+	}
+	.innerpage-lft-img {
+	    top: 18%;
 	}
 	
 	
@@ -729,6 +748,13 @@ hr{
 	}
 	.dfp-pro-slider-module {
 	    padding-bottom: 60px;
+	}
+	.innerpage-lft-img img{
+		max-width: 60px;
+		width: 100%;
+	}
+	.innerpage-lft-img {
+	    top: 16%;
 	}
 	
 	
