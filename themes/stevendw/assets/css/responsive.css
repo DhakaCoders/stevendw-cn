@@ -26,9 +26,6 @@
 	}
 }
 @media (max-width: 1499px) {
-    .container { 
-		max-width: 1130px;
-	}
 	h1,.fl-h1{
 		font-size: 84px;
 	}
@@ -76,10 +73,9 @@
 	}
 }
 
-@media(max-width: 1399px){
-	.container { 
-		max-width: 1100px;
-	}
+
+
+@media(max-width: 1299px){
 	h1,.fl-h1{
 		font-size: 70px;
 	}
@@ -98,10 +94,6 @@
 	h6,.fl-h6{
 		font-size: 22px;
 	}
-}
-
-@media(max-width: 1299px){
-
 }
 
 @media(max-width: 1199px){
