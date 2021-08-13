@@ -273,7 +273,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Shariful*/
-  if (windowWidth <= 767) {
+  if (windowWidth <= 991) {
     if( $('.dfpGrdSlider').length ){
       $('.dfpGrdSlider').slick({
         dots: true,
@@ -282,8 +282,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
         autoplay: false,
         autoplaySpeed: 4000,
         speed: 700,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     }
   }
