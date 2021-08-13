@@ -10,6 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.page-position-cntlr{
+	position: relative;
+	z-index: 11;
+}
 .dfp-plate-one-img-bx{
 	margin-bottom: 90px;
 	padding-top: 60px;
