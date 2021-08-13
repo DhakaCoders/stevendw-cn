@@ -267,6 +267,7 @@ body.home{
 .footer-top-gdr{
 	margin: 0 -9px;
 	padding-right: 170px;
+	margin-right: 0;
 }
 .ftr-top-grid-item-wrap{
 	float: left;
@@ -384,6 +385,22 @@ body.home{
 	.solutions-business-sec{
 		padding-bottom: 200px;
 	}
+	.ftr-top-grid-item-btm-desc > p{
+		font-size: 15px;
+	}
+	.footer-top-cntlr{
+		padding-left: 50px;
+	}
+	.footer-top-gdr .slick-list.draggable{
+		padding-right: 100px;
+	}
+	.ftr-top-grid-item-btm{
+		left: 40px;
+		right: 40px;
+	}
+	.ftr-top-grid-item-img{
+		height: 550px;
+	}
 }
 @media(max-width: 1399px){
 	
@@ -411,6 +428,7 @@ body.home{
 	.title-desc-module{
 		margin-bottom: 60px;
 	}
+	
 }
 @media(max-width: 991px){
 	.sec-entry-hdr-title.fl-h2,
@@ -432,6 +450,13 @@ body.home{
 	}
 	.business-element-man img{
 		max-width: 401px;
+	}
+	.ftr-top-grid-item-btm{
+		left: 20px;
+		right: 20px;
+	}
+	.ftr-top-grid-item-img{
+		height: 420px;
 	}
 	
 }
@@ -527,7 +552,7 @@ body.home{
 	}
 	.title-desc-module.fl-h2{
 		margin-bottom: 20px;
-		text-align: center;
+		text-align: left;
 		display: block;
 	}
 	.title-desc-module.fl-h2 br{
@@ -537,11 +562,80 @@ body.home{
 		width: 100%;
 	}
 	.title-desc-module{
+		margin-bottom: 0;
+		text-align: left;
+		width: 800px;
+		
+	}
+	.title-desc-module-rgt{
+		max-width: 400px;
+		width: 100%;
+		margin-left: initial;
+	}
+	.element-sec-cntlr{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		padding-bottom: 27px;
 		margin-bottom: 30px;
-		text-align: center;
+	}
+	.element-sec-cntlr::-webkit-scrollbar {
+		height: 4px;
+	}
+	.element-sec-cntlr::-webkit-scrollbar-thumb {
+		background: #2cab52;
+		border-radius: 5px;
+	}
+
+	.footer-top-cntlr{
+		padding-left: 20px;
+		margin-bottom: 65px;
+	}
+	.ftr-top-grid-item-img{
+		height: 351px;
+		margin-bottom: 20px;
+	}
+	.ftr-top-grid-item-btm{
+		position: static;
+	}
+	
+	.ftr-top-grid-item-title.fl-h4{
+		margin-bottom: 12px;
+	}
+	.ftr-top-grid-item-btm-desc{
+		display: block;
+		height: 100%;
+	}
+	.ftr-top-grid-item-btm-desc > p{
+		font-size: 14px;
+	}
+	.ftr-top-grid-item{
+		padding-bottom: 50px;
+	}
+	.elementGridSlider .slick-prev, .elementGridSlider .slick-next{
+		position: absolute;
+		bottom: 0!important;
+
+		top: initial;
+		display: block;
+		-webkit-transform: initial;
+		-ms-transform: initial;
+		transform: initial;
+	}
+	.elementGridSlider{
+		position: relative;
+		margin: 0;
+	}
+	.elementGridSlider .slick-prev{
+		left: 8px!important;
+	}
+	.elementGridSlider .slick-next{
+		right: 20px!important;
 	}
 
 }
 @media(max-width: 575px){
-	
+	.footer-top-gdr .slick-list.draggable {
+		padding-right: 60px;
+	}
 }
