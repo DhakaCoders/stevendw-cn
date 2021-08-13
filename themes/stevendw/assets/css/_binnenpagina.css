@@ -768,6 +768,9 @@ hr{
 	.dfpGrdSlider.slick-initialized .dfp-grd-item{
 		display: block;
 	}
+	#news-details .dfp-social-media-module.btm-social-media {
+	    padding-top: 20px;
+	}
 	
 	
 	
@@ -921,6 +924,38 @@ hr{
 	}
 	.dfp-pro-slider-module {
 	    padding-bottom: 50px;
+	}
+	#news-details.default-page-con {
+	    padding-bottom: 35px;
+	    padding-top: 40px;
+	}
+	#news-details .dfp-one-img-plate-bx {
+	    padding-top: 35px;
+	    margin-bottom: 35px;
+	}
+	#news-details .dfp-social-media-module.btm-social-media {
+	    padding-top: 10px;
+	}
+
+	.relatedProGrdSlider .sdw-related-pro-grd-item{
+		display: none;
+	}
+
+	.relatedProGrdSlider .sdw-related-pro-grd-item:first-child{
+		display: block;
+	}
+
+	.relatedProGrdSlider.slick-initialized .sdw-related-pro-grd-item{
+		display: block;
+	}
+	.sdw-related-pro-grds{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sdw-related-pro-grd-item{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	
