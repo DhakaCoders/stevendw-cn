@@ -24,6 +24,7 @@ body.home{
 	background-repeat: repeat!important;
 }
 .hm-bnr-down-scroll{
+	height: 157px;
 	position: absolute;
 	z-index: 5;
 	bottom: -25px;
@@ -32,10 +33,31 @@ body.home{
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	cursor: pointer;
 
 }
-.hm-bnr-down-scroll i{
+.hm-bnr-scroll-icon{
 	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.scroll-icon-Animate{
+    animation: downAnimate 2s linear infinite;
+}
+@keyframes downAnimate{
+	0%{
+		margin-bottom: 0;
+	}
+	100%{
+		margin-bottom: -8px;
+	}
 }
 .hm-bnr-scroll-title{
 	font-family: 'Montserrat', sans-serif;
@@ -78,11 +100,13 @@ body.home{
 .business-element-sec-cntlr{
 	position: relative;
 	padding-top: 130px;
+	overflow: hidden;
 }
 .business-element-man{
 	position: absolute;
 	top: 0;
 	right: 0;
+	bottom: 0;
 	z-index: 2;
 }
 .round-icon{
@@ -163,6 +187,9 @@ body.home{
 .slsn-bsns-item-image{
 	margin-bottom: 42px;
 }
+.slsn-bsns-item-image a{
+	display: inline-block;
+}
 .slsn-bsns-item-desc-cntlr{
 
 }
@@ -224,6 +251,7 @@ body.home{
 }
 .footer-top-gdr{
 	margin: 0 -9px;
+	padding-right: 170px;
 }
 .ftr-top-grid-item-wrap{
 	float: left;
