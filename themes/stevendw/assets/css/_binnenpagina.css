@@ -526,6 +526,33 @@ hr{
 }
 
 
+.dfp-grd-module-inr{
+	margin-left: -12px;
+	margin-right: -12px;
+	padding-bottom: 75px;
+	padding-top: 65px;
+	border-bottom: 1px solid #E9E9E9;
+}
+.dfp-grd-item{
+	float: left;
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 25px;
+}
+
+
+.dfp-title-des-module-inr{
+	padding-top: 90px;
+}
+.dfp-title-des-module .title-desc-module.fl-h2{
+	color: inherit;
+}
+
+.dfp-pro-slider-module{
+	overflow: hidden;
+	padding-bottom: 100px;
+}
 
 
 
