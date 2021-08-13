@@ -219,6 +219,8 @@ body.home{
 
 .footer-top-cntlr{
 	padding-left: 100px;
+	position: relative;
+	z-index: 6;
 }
 .footer-top-gdr{
 	margin: 0 -9px;
