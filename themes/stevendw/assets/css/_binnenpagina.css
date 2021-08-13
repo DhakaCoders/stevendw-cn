@@ -553,6 +553,7 @@ hr{
 
 .sdw-related-product-sec .sec-entry-hdr-title.fl-h2{
 	color: #141414;
+	margin-bottom: 30px;
 }
 
 .dfp-grd-module .slsn-bsns-item{
@@ -603,6 +604,9 @@ hr{
 	.innerpage-lft-img {
 	    top: 19%;
 	}
+	.sdw-related-pro-grd-item:nth-child(2) {
+	    margin-top: 100px;
+	}
 
 
 }
@@ -649,6 +653,9 @@ hr{
 		max-width: 150px;
 		width: 100%;
 	}
+	.sdw-related-pro-grd-item:nth-child(2) {
+	    margin-top: 80px;
+	}
 	
 
 
@@ -692,6 +699,9 @@ hr{
 	}
 	.innerpage-lft-img {
 	    top: 18%;
+	}
+	.sdw-related-pro-grd-item:nth-child(2) {
+	    margin-top: 60px;
 	}
 	
 	
@@ -770,6 +780,9 @@ hr{
 	}
 	#news-details .dfp-social-media-module.btm-social-media {
 	    padding-top: 20px;
+	}
+	.sdw-related-pro-grd-item:nth-child(2) {
+	    margin-top: 40px;
 	}
 	
 	
@@ -956,6 +969,13 @@ hr{
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 40px;
+	}
+	.sdw-related-pro-grd-item:nth-child(2) {
+	    margin-top: 0;
+	}
+	.sdw-related-product-sec {
+	    padding-bottom: 70px;
 	}
 
 	
