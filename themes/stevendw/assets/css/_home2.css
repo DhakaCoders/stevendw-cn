@@ -113,6 +113,15 @@
 	.page-bnr-title{
 		padding-bottom: 100px;
 	}
+	.has-post-date .page-banner{
+		height: 440px;
+	}
+	.has-post-date .page-bnr-title {
+	    padding-bottom: 110px;
+	}
+	.has-post-date .page-bnr-title-ctlr {
+	    padding-left: 100px;
+	}
 }
 @media(max-width: 1399px){
 	.page-banner{
@@ -120,6 +129,9 @@
 	}
 	.page-bnr-title{
 		padding-bottom: 90px;
+	}
+	.has-post-date .page-bnr-title-ctlr {
+	    padding-left: 90px;
 	}
 }
 @media(max-width: 1199px){
@@ -137,6 +149,9 @@
 	.page-bnr-title{
 		padding-bottom: 60px;
 	}
+	.has-post-date .page-bnr-title-ctlr {
+	    padding-left: 80px;
+	}
 }
 @media(max-width: 767px){
 	.page-banner{
@@ -144,5 +159,14 @@
 	}
 	.page-bnr-title{
 		padding-bottom: 40px;
+	}
+	.has-post-date .page-banner{
+		height: 420px;
+	}
+	.has-post-date .page-bnr-title {
+	    padding-bottom: 130px;
+	}
+	.has-post-date .page-bnr-title-ctlr {
+	    padding-left: 70px;
 	}
 }
