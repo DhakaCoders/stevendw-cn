@@ -89,7 +89,7 @@ ul li::before {
 	height: 8px;
 	background: #00A04D;
 	border-radius: 100%;
-	margin-top: 11px;
+	margin-top: 12px;
 }
 ul li.refGridItem:before{
 	display: none;
