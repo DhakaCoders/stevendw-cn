@@ -230,12 +230,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Noyon*/
-  if( $('.hm-banner-cntlr').length ){
-    var windowHeight = $(window).height();
-    if (windowHeight >= 678) {
-      $('.hm-banner-cntlr').css('height', windowHeight);
+  if( $('.hamburger-cntlr').length ){
+    $('.hamburger-cntlr').click(function(){
+      $('body').toggleClass('allWork');
+    });
+  }
+  if( $('li.menu-item-has-children a').length ){
+    $('li.menu-item-has-children a').click(function(e){
+     event.preventDefault();
+     $(this).next().slideToggle(300);
+     $(this).parent().toggleClass('this-sub-menu-active');
+   });
+  }
+
+
+  if (windowWidth >= 767) {
+    if( $('.hm-banner-cntlr').length ){
+      var windowHeight = $(window).height();
+      if (windowHeight >= 678) {
+        $('.hm-banner-cntlr').css('height', windowHeight);
+      }
     }
   }
+  
+  
   
 
 
