@@ -91,3 +91,7 @@
 .sdw-back-btn-ctlr a:hover svg{
 	fill: #2DAB52;
 }
+
+.has-post-date .page-bnr-title{
+	text-align: left;
+}
