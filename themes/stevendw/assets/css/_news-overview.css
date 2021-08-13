@@ -83,26 +83,12 @@ strong.post-date {
     top: 42%;
     z-index: 1;
 }
-.news-overview-grid-sec-cntlr {
+.news-overview-grid-sec-cntlr{
     position: relative;
     z-index: 9;
 }
 
-.fl-pagination-ctlr ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 -23px;
-}
-.fl-pagination-ctlr ul li {
-    padding: 0 23px;
-    line-height: 1.3;
-}
-.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.3;
-}
+
 
 
 @media (max-width: 1699px){

@@ -291,9 +291,33 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Shariful*/
-  if (windowWidth <= 767) {
+  if (windowWidth <= 991) {
     if( $('.dfpGrdSlider').length ){
       $('.dfpGrdSlider').slick({
+        dots: true,
+        infinite: false,
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    }
+  }
+
+  if (windowWidth <= 767) {
+    if( $('.relatedProGrdSlider').length ){
+      $('.relatedProGrdSlider').slick({
         dots: true,
         infinite: false,
         arrows: false,
