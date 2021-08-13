@@ -270,6 +270,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
       });
   }
 
+  if (windowWidth <= 767) {
+    if( $('.slsnBsnsSlider').length ){
+      $('.slsnBsnsSlider').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+  
+
   if( $('.scrollto').length ){
     $('.scrollto').on('click', function(e){
       e.preventDefault();
