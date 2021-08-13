@@ -327,8 +327,12 @@ body.home{
 
 
 
-
-
+.footer-top-gdr{
+	padding-right: 0;
+}
+.footer-top-gdr .slick-list.draggable{
+	padding-right: 170px;
+}
 
 
 
@@ -347,6 +351,9 @@ body.home{
 	.hm-banner-cntlr{
 		height: 678px;
 	}
+	.hm-bnr-desc p{
+		font-size: 22px;
+	}
 }
 @media(max-width: 1399px){
 	
@@ -355,13 +362,24 @@ body.home{
 	
 }
 @media(max-width: 1199px){
-	
+	.hm-bnr-desc p{
+		font-size: 20px;
+	}
 }
 @media(max-width: 991px){
 	
 }
 @media(max-width: 767px){
-	
+	.hm-banner-cntlr{
+		height: 808px;
+	}
+	.hm-bnr-title.fl-h1{
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	.hm-bnr-desc p{
+		font-size: 18px;
+	}
 }
 @media(max-width: 575px){
 	
