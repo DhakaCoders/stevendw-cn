@@ -26,7 +26,7 @@ body.home{
 .hm-bnr-down-scroll{
 	height: 157px;
 	position: absolute;
-	z-index: 5;
+	z-index: 8;
 	bottom: -25px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -124,6 +124,12 @@ body.home{
 
 .solutions-business-sec{
 	padding-bottom: 250px;
+	position: relative;
+	z-index: 8;
+}
+.element-sec{
+	position: relative;
+	z-index: 8;
 }
 
 .sec-entry-hdr{
@@ -354,6 +360,11 @@ body.home{
 	.hm-bnr-desc p{
 		font-size: 22px;
 	}
+	.round-icon i svg{
+		max-width: 253px;
+		display: inline-block;
+		height: auto;
+	}
 }
 @media(max-width: 1399px){
 	
@@ -364,6 +375,12 @@ body.home{
 @media(max-width: 1199px){
 	.hm-bnr-desc p{
 		font-size: 20px;
+	}
+	.round-icon i svg{
+		max-width: 230px;
+	}
+	.sec-entry-hdr-title.fl-h2{
+		margin-bottom: 15px;
 	}
 }
 @media(max-width: 991px){
@@ -379,6 +396,26 @@ body.home{
 	}
 	.hm-bnr-desc p{
 		font-size: 18px;
+	}
+	.round-icon i svg{
+		max-width: 203px;
+	}
+	.business-element-sec-cntlr{
+		overflow: initial;
+	}
+	.round-icon{
+		top: -86px;
+		z-index: 6;
+	}
+	.business-element-man{
+		top: -100px;
+		z-index: 6;
+	}
+	.sec-entry-hdr-desc{
+		margin-bottom: 40px;
+	}
+	.sec-entry-hdr-title.fl-h2{
+		margin-bottom: 22px;
 	}
 }
 @media(max-width: 575px){
