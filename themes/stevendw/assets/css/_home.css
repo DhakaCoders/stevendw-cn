@@ -430,6 +430,9 @@ body.home{
 	.title-desc-module{
 		margin-bottom: 50px;
 	}
+	.business-element-man img{
+		max-width: 401px;
+	}
 	
 }
 @media(max-width: 767px){
@@ -457,6 +460,9 @@ body.home{
 	.business-element-man{
 		top: 0;
 		z-index: 6;
+	}
+	.business-element-man img{
+		max-width: 301px;
 	}
 	.sec-entry-hdr-desc{
 		margin-bottom: 40px;
