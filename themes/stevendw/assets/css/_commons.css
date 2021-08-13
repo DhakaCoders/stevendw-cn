@@ -28,11 +28,11 @@ body {
     line-height: 25px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*font-family: 'Work Sans', sans-serif;*/
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-    /*font-family: 'Aldo-SemiBold';*/
 }
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Work Sans', sans-serif;*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/*font-family: 'Aldo-SemiBold';*/
 p{
 	line-height: 1.4;
 	margin-bottom: 15px;
@@ -215,6 +215,10 @@ b{
     line-height: 1;
 }
 
+.page-position-cntlr{
+	position: relative;
+	z-index: 11;
+}
 
 ul.reset-list,
 ol.reset-list,
