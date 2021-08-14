@@ -126,6 +126,10 @@
       <path d="M1.86426 5.00009L84.3643 5" stroke="#ACAFB0" stroke-width="1.6"/>
       <path d="M4.9578 10L6.36426 8.58157L2.81291 5L6.36426 1.41843L4.9578 -6.16229e-08L-2.18044e-07 5L4.9578 10Z"/>
     </symbol>
+    <symbol id="back-btn-arrow-hover-svg" width="85" height="10" viewBox="0 0 85 10" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.86426 5.00009L84.3643 5" stroke="#2DAB52" stroke-width="1.6"/>
+      <path d="M4.9578 10L6.36426 8.58157L2.81291 5L6.36426 1.41843L4.9578 -6.16229e-08L-2.18044e-07 5L4.9578 10Z" fill="#2DAB52"/>
+    </symbol>
     <symbol id="page-bnr-post-date-icon-xs-svg" width="35" height="51" viewBox="0 0 35 51" xmlns="http://www.w3.org/2000/svg">
       <circle cx="2.5" cy="48" r="2.5" fill="#2DAB52"/>
       <circle cx="17.5" cy="48" r="2.5" fill="#2DAB52"/>
@@ -355,10 +359,14 @@
                 <div class="sdw-back-btn-ctlr">
                   <a href="javascript:history.go(-1)">
                     Back to OVerview
-                    <i>
+                    <i class="back-btn-icon">
                       <svg class="back-btn-arrow-svg" width="85" height="10" viewBox="0 0 85 10" fill="#ACAFB0">
                       <use xlink:href="#back-btn-arrow-svg"></use> </svg>
                     </i>
+                    <!-- <i class="back-btn-icon-hover">
+                      <svg class="back-btn-arrow-hover-svg" width="85" height="10" viewBox="0 0 85 10" fill="#ACAFB0">
+                      <use xlink:href="#back-btn-arrow-hover-svg"></use> </svg>
+                    </i> -->
                   </a>
                 </div>
               </div>
@@ -570,13 +578,15 @@
                 <div class="dfp-grd-module-inr dfpGrdSlider clearfix">
                   <div class="dfp-grd-item">
                     <div class="slsn-bsns-item">
-                      <div class="slsn-bsns-item-image">
+                      <div class="slsn-bsns-item-image mHc">
                         <a href="#">
                           <img src="assets/images/wolf-icon.png" alt="">
                         </a>
                       </div>
                       <div class="slsn-bsns-item-desc-cntlr">
-                        <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        <div class="mHc1">
+                          <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        </div>
                         <div class="slsn-bsns-item-desc">
                           <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices. Ipsum, vestibulum pretium quis lectus sit bibendum nisl, ultricies lorem.</p>
                         </div>
@@ -585,13 +595,15 @@
                   </div>
                   <div class="dfp-grd-item">
                     <div class="slsn-bsns-item">
-                      <div class="slsn-bsns-item-image">
+                      <div class="slsn-bsns-item-image mHc">
                         <a href="#">
                           <img src="assets/images/wolf-icon.png" alt="">
                         </a>
                       </div>
                       <div class="slsn-bsns-item-desc-cntlr">
-                        <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        <div class="mHc1">
+                          <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        </div>
                         <div class="slsn-bsns-item-desc">
                           <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices. Ipsum, vestibulum pretium quis lectus sit bibendum nisl, ultricies lorem.</p>
                         </div>
@@ -600,13 +612,15 @@
                   </div>
                   <div class="dfp-grd-item">
                     <div class="slsn-bsns-item">
-                      <div class="slsn-bsns-item-image">
+                      <div class="slsn-bsns-item-image mHc">
                         <a href="#">
                           <img src="assets/images/wolf-icon.png" alt="">
                         </a>
                       </div>
                       <div class="slsn-bsns-item-desc-cntlr">
-                        <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        <div class="mHc1">
+                          <h3 class="slsn-bsns-item-title fl-h4 "><a href="#">Wolf Print</a></h3>
+                        </div>
                         <div class="slsn-bsns-item-desc">
                           <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices. Ipsum, vestibulum pretium quis lectus sit bibendum nisl, ultricies lorem.</p>
                         </div>
@@ -926,62 +940,61 @@
   </section>
 
 
-  <div class="page-position-cntlr">
-    <section class="sdw-related-product-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="sdw-related-product-sec-inr">
-              <div class="sec-entry-hdr">
-                <h2 class="sec-entry-hdr-title fl-h2">Related Articles</h2>
-              </div>
-              <div class="sdw-related-pro-grds relatedProGrdSlider clearfix">
-                <div class="sdw-related-pro-grd-item">
-                  <div class="news-overview-grid-item">
-                    <div class="news-overview-grid-img-cntlr">
-                      <a class="overlay-link" href="#"></a>
-                      <div class="inline-bg" style="background-image: url(assets/images/news-overview-grid-3.jpg);"></div>
-                      <img src="assets/images/news-overview-grid-3.jpg" alt="">
-                    </div>
-                    <div class="news-overview-grid-des"> 
-                      <div class="news-overview-des-inner">
-                        <h2 class="fl-h4"><a href="#">Vitae volutpat rhoncus, sodales <br>sagittis enim purus.</a> </h2>
-                        <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                        <div class="sdw-grid-btn">
-                          <a class="fl-read-more-btn" href="#">READ MORE</a>
-                        </div>
-                        <div class="nod-post-date">
-                          <strong class="post-date">02 <br> AUG</strong>
-                          <i>
-                            <svg class="news-overviews-dots" width="50" height="65" viewBox="0 0 50 65" fill="#2DAB52">
-                            <use xlink:href="#news-overviews-dots"></use> </svg>
-                          </i>
-                        </div>
+  
+  <section class="sdw-related-product-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sdw-related-product-sec-inr">
+            <div class="sec-entry-hdr">
+              <h2 class="sec-entry-hdr-title fl-h2">Related Articles</h2>
+            </div>
+            <div class="sdw-related-pro-grds relatedProGrdSlider clearfix">
+              <div class="sdw-related-pro-grd-item">
+                <div class="news-overview-grid-item">
+                  <div class="news-overview-grid-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
+                    <div class="inline-bg" style="background-image: url(assets/images/news-overview-grid-3.jpg);"></div>
+                    <img src="assets/images/news-overview-grid-3.jpg" alt="">
+                  </div>
+                  <div class="news-overview-grid-des"> 
+                    <div class="news-overview-des-inner">
+                      <h2 class="fl-h4"><a href="#">Vitae volutpat rhoncus, sodales <br>sagittis enim purus.</a> </h2>
+                      <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
+                      <div class="sdw-grid-btn">
+                        <a class="fl-read-more-btn" href="#">READ MORE</a>
+                      </div>
+                      <div class="nod-post-date">
+                        <strong class="post-date">02 <br> AUG</strong>
+                        <i>
+                          <svg class="news-overviews-dots" width="50" height="65" viewBox="0 0 50 65" fill="#2DAB52">
+                          <use xlink:href="#news-overviews-dots"></use> </svg>
+                        </i>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="sdw-related-pro-grd-item">
-                  <div class="news-overview-grid-item">
-                    <div class="news-overview-grid-img-cntlr">
-                      <a class="overlay-link" href="#"></a>
-                      <div class="inline-bg" style="background-image: url(assets/images/news-overview-grid-4.jpg);"></div>
-                      <img src="assets/images/news-overview-grid-4.jpg" alt="">
-                    </div>
-                    <div class="news-overview-grid-des"> 
-                      <div class="news-overview-des-inner">
-                        <h2 class="fl-h4"><a href="#">Vitae volutpat rhoncus, sodales <br>sagittis enim purus.</a> </h2>
-                        <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                        <div class="sdw-grid-btn">
-                          <a class="fl-read-more-btn" href="#">READ MORE</a>
-                        </div>
-                        <div class="nod-post-date">
-                          <strong class="post-date">02 <br> AUG</strong>
-                          <i>
-                            <svg class="news-overviews-dots" width="50" height="65" viewBox="0 0 50 65" fill="#2DAB52">
-                            <use xlink:href="#news-overviews-dots"></use> </svg>
-                          </i>
-                        </div>
+              </div>
+              <div class="sdw-related-pro-grd-item">
+                <div class="news-overview-grid-item">
+                  <div class="news-overview-grid-img-cntlr">
+                    <a class="overlay-link" href="#"></a>
+                    <div class="inline-bg" style="background-image: url(assets/images/news-overview-grid-4.jpg);"></div>
+                    <img src="assets/images/news-overview-grid-4.jpg" alt="">
+                  </div>
+                  <div class="news-overview-grid-des"> 
+                    <div class="news-overview-des-inner">
+                      <h2 class="fl-h4"><a href="#">Vitae volutpat rhoncus, sodales <br>sagittis enim purus.</a> </h2>
+                      <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
+                      <div class="sdw-grid-btn">
+                        <a class="fl-read-more-btn" href="#">READ MORE</a>
+                      </div>
+                      <div class="nod-post-date">
+                        <strong class="post-date">02 <br> AUG</strong>
+                        <i>
+                          <svg class="news-overviews-dots" width="50" height="65" viewBox="0 0 50 65" fill="#2DAB52">
+                          <use xlink:href="#news-overviews-dots"></use> </svg>
+                        </i>
                       </div>
                     </div>
                   </div>
@@ -991,8 +1004,8 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
   <footer class="footer-wrp">
     <span class="ftr-ornament-icon">
       <i>

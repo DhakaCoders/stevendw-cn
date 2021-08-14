@@ -44,6 +44,9 @@
 	margin-bottom: 30px;
 	line-height: 1.1;
 }
+.default-page-con h4{
+	color: #565B5E;
+}
 
 
 .dfp-text-module{
@@ -521,7 +524,10 @@ hr{
 	border-top: 1px solid #E9E9E9;
 }
 .dfp-title-des-module .title-desc-module.fl-h2{
-	color: inherit;
+	color: #141414;
+}
+.dfp-title-des-module .title-desc-module-rgt p{
+	color: #565B5E;
 }
 
 .dfp-pro-slider-module{
@@ -532,11 +538,15 @@ hr{
 .sdw-related-product-sec .sec-entry-hdr-title.fl-h2{
 	color: #141414;
 	margin-bottom: 30px;
+	text-transform: capitalize;
 }
 
 .dfp-grd-module .slsn-bsns-item{
 	background: #141414;
 }
+
+
+
 
 
 
