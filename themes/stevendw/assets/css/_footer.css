@@ -224,6 +224,12 @@
 	.ftr-desc{
 		width: 100%;
 	}
+	.ftr-tel{
+		margin-bottom: 0;
+	}
+	.ftr-mail{
+		margin-bottom: 30px;
+	}
 }
 @media(max-width: 575px){
 	
