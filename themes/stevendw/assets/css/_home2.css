@@ -26,7 +26,7 @@
 .page-bnr-des{
 	position: relative;
 	padding-top: 232px;
-	z-index: 11;
+	z-index: 3;
 }
 .has-post-date .page-bnr-des{
 	padding-top: 182px;
