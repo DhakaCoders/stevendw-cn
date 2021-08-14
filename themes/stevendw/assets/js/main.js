@@ -199,7 +199,7 @@ if( $('.elementGridSlider').length ){
   $('.elementGridSlider').slick({
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 4000,
     speed: 700,
