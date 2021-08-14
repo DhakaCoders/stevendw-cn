@@ -1,6 +1,6 @@
 .page-404-sec-wrp {
     padding-bottom: 85px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .page-404-dsc-wrp{
     max-width: 920px;
@@ -12,24 +12,27 @@
     display: inline-block;
     vertical-align: baseline;
     padding-bottom: 40px;
+    color: #141414;
 }
 .title-404{
-    font-size: 80px;
+    font-size: 96px;
+    line-height: 1;
 }
 .page-404-dsc-wrp span {
     display: block;
     font-size: 22px;
     line-height: 1;
     letter-spacing: -0.02em;
-    color: #000;
+    color: #141414;
     font-weight: 700;
     padding-bottom: 20px;
 }
 .page-404-dsc-wrp p {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .page-404-btn{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .fl-green-btn {
     display: inline-block;
