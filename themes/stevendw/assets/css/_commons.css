@@ -216,10 +216,6 @@ b{
     line-height: 1;
 }
 
-.page-position-cntlr{
-	position: relative;
-	z-index: 11;
-}
 
 ul.reset-list,
 ol.reset-list,
