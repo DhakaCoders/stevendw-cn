@@ -538,6 +538,12 @@ hr{
 	background: #141414;
 }
 
+.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4,
+.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4 a{
+	color: #565B5E!important;
+}
+
+
 
 
 
@@ -903,7 +909,7 @@ hr{
 	    padding-top: 50px;
 	}
 	.dfp-pro-slider-module {
-	    padding-bottom: 50px;
+	    padding-bottom: 0;
 	}
 	#news-details.default-page-con {
 	    padding-top: 40px;
@@ -959,6 +965,17 @@ hr{
 	}
 	.sdw-related-product-sec .sec-entry-hdr-title.fl-h2{
 		font-size: 36px;
+	}
+	.dfp-pro-slider-module .elementGridSlider .slick-prev,
+	.dfp-pro-slider-module .elementGridSlider .slick-next{
+		display: none!important;
+	}
+	.dfp-pro-slider-module .ftr-top-grid-item {
+	    padding-bottom: 60px;
+	    border-bottom: 1px solid #E9E9E9;
+	}
+	.dfp-pro-slider-module .footer-top-cntlr{
+		margin-bottom: 50px;
 	}
 
 	
