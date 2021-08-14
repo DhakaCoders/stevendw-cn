@@ -794,7 +794,7 @@ hr{
 	    padding-top: 30px;
 	}
 	.dfp-tbl-wrap{
-		padding-top: 30px;
+		padding-top: 20px;
 		padding-bottom: 50px;
 		border-top: none;
 	}
@@ -838,7 +838,7 @@ hr{
 	
 	.gallery-wrap{
 		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-bottom: 15px;
 	}
 	.gallery-icon-img {
 	    height: 240px;
@@ -884,11 +884,11 @@ hr{
 		padding-bottom: 0;
 	}
 	.dfp-full-img-module {
-	    padding-top: 25px;
+	    padding-top: 15px;
 	    padding-bottom: 40px;
 	}
 	.dfp-grd-module-inr{
-		padding-top: 20px;
+		padding-top: 15px;
 		padding-bottom: 20px;
 		margin-left: 0;
 		margin-right: 0;
@@ -949,8 +949,14 @@ hr{
 	}
 	.dfp-title-des-module .title-desc-module-rgt{
 		max-width: 100%;
-		padding-bottom: 30px;
+		padding-bottom: 60px;
 		text-align: center;
+	}
+	.dfpGrdSlider .slsn-bsns-item{
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	
