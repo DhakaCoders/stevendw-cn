@@ -197,26 +197,13 @@ function get_title_by_page_template( $pagetemplate ){
   return $post_title;
 }
 
-function diesten_placeholder($format = 'src'){
+function nieuws_placeholder($format = 'src'){
   $placehoder = get_field('placeholder', 'options');
   if( !empty($placehoder) ){
       if( $format == 'src' ){
-        $placeholder = !empty($placehoder['diensten'])? cbv_get_image_src($placehoder['diensten']):'';
+        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_src($placehoder['nieuws']):'';
       }else{
-        $placeholder = !empty($placehoder['diensten'])? cbv_get_image_tag($placehoder['diensten']):'';
-      }
-      return $placeholder;
-  }
-  return '';
-
-}
-function referenties_placeholder($format = 'src'){
-  $placehoder = get_field('placeholder', 'options');
-  if( !empty($placehoder) ){
-      if( $format == 'src' ){
-        $placeholder = !empty($placehoder['referenties'])? cbv_get_image_src($placehoder['referenties']):'';
-      }else{
-        $placeholder = !empty($placehoder['referenties'])? cbv_get_image_tag($placehoder['referenties']):'';
+        $placeholder = !empty($placehoder['nieuws'])? cbv_get_image_tag($placehoder['nieuws']):'';
       }
       return $placeholder;
   }
