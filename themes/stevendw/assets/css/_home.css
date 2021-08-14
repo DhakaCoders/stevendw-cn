@@ -380,6 +380,29 @@ body.home{
 
 
 
+.sdw-service-con-hover{
+	transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    -o-transform: scale3d(1,0,1);
+    transform-origin: bottom;
+    opacity: 0;
+}
+.ftr-top-grid-item:hover .sdw-service-con{
+	display: none;
+}
+.ftr-top-grid-item:hover .sdw-service-con-hover{
+	transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    opacity: 1;
+
+}
+
 
 
 /*responsive*/
