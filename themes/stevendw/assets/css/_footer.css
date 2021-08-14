@@ -152,10 +152,10 @@
 }
 @media(max-width: 1499px){
 	.ftr-ornament-icon{
-		margin-top: -255px;
+		margin-top: -250px;
 	}
-	.ftr-ornament-icon i svg{
-		max-width: 200px;
+	.ftr-ornament-icon i{
+		max-width: 260px;
 		display: inline-block;
 	}
 	.ftr-title.fl-h2{
@@ -163,6 +163,14 @@
 	}
 	.ftr-title.fl-h2:after{
 		bottom: 10px;
+	}
+}
+@media(max-width: 1399px){
+	.ftr-ornament-icon {
+	    margin-top: -190px;
+	}
+	.ftr-ornament-icon i {
+	    max-width: 200px;
 	}
 }
 @media(max-width: 1199px){
@@ -181,9 +189,20 @@
 	.footer-cntlr{
 		padding-top: 75px;
 	}
+	.ftr-ornament-icon {
+	    margin-top: -140px;
+	}
+	.ftr-ornament-icon i {
+	    max-width: 150px;
+	}
 }
 @media(max-width: 991px){
-	
+	.ftr-ornament-icon {
+	    margin-top: -92px;
+	}
+	.ftr-ornament-icon i {
+	    max-width: 100px;
+	}
 }
 @media(max-width: 767px){
 	.footer-wrp{
