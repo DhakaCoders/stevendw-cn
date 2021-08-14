@@ -480,6 +480,10 @@ body.home .page-body-cntlr{
 	.title-desc-module{
 		margin-bottom: 60px;
 	}
+	.slsn-bsns-item-ditet-icon {
+	    left: -10px;
+	    bottom: -25px;
+	}
 	
 }
 @media(max-width: 991px){
@@ -584,7 +588,7 @@ body.home .page-body-cntlr{
 		font-size: 14px;
 	}
 	.slsn-bsns-item-ditet-icon{
-		bottom: 40px;
+		bottom: 70px;
 		left: -10px;
 		z-index: 2;
 	}
