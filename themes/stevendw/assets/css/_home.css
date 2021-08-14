@@ -391,8 +391,16 @@ body.home .page-body-cntlr{
     transform-origin: bottom;
     opacity: 0;
 }
+.sdw-service-con{
+	transition: all 2.5s;
+    -ms-transition: all 2.5s;
+    -webkit-transition: all 2.5s;
+}
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
+	transition: all 0s;
+    -ms-transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .ftr-top-grid-item:hover .sdw-service-con-hover{
 	transform: scale3d(1,1,1);
