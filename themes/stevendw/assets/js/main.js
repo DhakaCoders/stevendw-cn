@@ -8,6 +8,14 @@ if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
 }
 
+var hmsgHeight = $('.home-messege').outerHeight();
+$('body.home .header').css({"top": hmsgHeight});
+
+$( window ).resize(function() {
+  var hmsgHeight = $('.home-messege').outerHeight();
+  $('body.home .header').css({"top": hmsgHeight});
+});
+
 
 //matchHeightCol
 if($('.mHc').length){
