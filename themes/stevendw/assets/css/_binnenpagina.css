@@ -538,10 +538,7 @@ hr{
 	background: #141414;
 }
 
-.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4,
-.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4 a{
-	color: #565B5E!important;
-}
+
 
 
 
@@ -957,6 +954,9 @@ hr{
 		padding-bottom: 60px;
 		text-align: center;
 	}
+	.dfp-title-des-module .title-desc-module-rgt p{
+		color: #565B5E;
+	}
 	.dfpGrdSlider .slsn-bsns-item{
 		max-width: 350px;
 		width: 100%;
@@ -976,6 +976,13 @@ hr{
 	}
 	.dfp-pro-slider-module .footer-top-cntlr{
 		margin-bottom: 50px;
+	}
+	.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4,
+	.dfp-pro-slider-module .ftr-top-grid-item-title.fl-h4 a{
+		color: #565B5E!important;
+	}
+	.dfp-pro-slider-module .ftr-top-grid-item-btm-desc p{
+		color: #565B5E!important;
 	}
 
 	
