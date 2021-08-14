@@ -176,6 +176,9 @@
 	
 }
 @media(max-width: 767px){
+	.footer-wrp{
+		padding-top: 90px;
+	}
 	.ftr-ornament-icon{
 		display: none;
 	}
