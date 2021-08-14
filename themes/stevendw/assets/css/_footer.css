@@ -221,6 +221,9 @@
 		background: #fff;
 		content: "";
 	}
+	.ftr-desc{
+		width: 100%;
+	}
 }
 @media(max-width: 575px){
 	

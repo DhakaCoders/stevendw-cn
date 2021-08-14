@@ -7,6 +7,8 @@ $('.navbar-toggle').on('click', function(){
 if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
 }
+
+
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();
@@ -29,6 +31,7 @@ if($('.mHc5').length){
 if($('.mHc6').length){
   $('.mHc6').matchHeight();
 };
+
 $(window).load(function() {
 //matchHeightCol
   if($('.mHc').length){
@@ -77,7 +80,6 @@ $('.fancybox').fancybox({
 
 }
 
-
 /**
 Responsive on 767px
 */
@@ -90,8 +92,6 @@ Responsive on 767px
 
 
 // }
-
-
 
 // http://codepen.io/norman_pixelkings/pen/NNbqgG
 // https://stackoverflow.com/questions/38686650/slick-slides-on-pagination-hover
@@ -142,7 +142,6 @@ if( $('.responsive-slider').length ){
 
 
 
-
 /* BS form Validator*/
 (function() {
   'use strict';
@@ -187,8 +186,7 @@ if (windowWidth >= 767) {
   }
 }
 
-  
-  
+
 if( $('.elementGridSlider').length ){
   $('.elementGridSlider').slick({
     dots: false,
@@ -198,9 +196,46 @@ if( $('.elementGridSlider').length ){
     autoplaySpeed: 4000,
     speed: 700,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          arrows: true,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
     });
 }
+
+if (windowWidth <= 767) {
+  if( $('.slsnBsnsSlider').length ){
+    $('.slsnBsnsSlider').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  }
+}
+
 
 if( $('.scrollto').length ){
   $('.scrollto').on('click', function(e){
@@ -262,19 +297,13 @@ if (windowWidth <= 767) {
 }
 
 
-
 //Masonry
-
-
 if( $('.news-overview-grid-items-cntlr').length ){
   $('.news-overview-grid-items-cntlr').masonry({
     // options
     itemSelector: '.sdw-masonry-item',
   }).masonry('layout');
 };
-
-
-
 
 new WOW().init();
 
