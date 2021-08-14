@@ -944,6 +944,14 @@ hr{
 	.sdw-related-product-sec {
 	    padding-bottom: 70px;
 	}
+	.dfp-title-des-module .title-desc-module{
+		width: 100%;
+	}
+	.dfp-title-des-module .title-desc-module-rgt{
+		max-width: 100%;
+		padding-bottom: 30px;
+		text-align: center;
+	}
 
 	
 }
