@@ -127,6 +127,7 @@
     fill: #565B5E;
 }
 .fl-pagination-ctlr{
+	padding-top: 30px;
     padding-bottom: 30px;
 }
 .fl-pagination-ctlr ul li a i{
