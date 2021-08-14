@@ -120,7 +120,6 @@
 }
 .fl-pagination-ctlr ul li a.prev i svg,
 .fl-pagination-ctlr ul li a.next i svg{
-    fill: #2DAB52;
     height: 23px;
 }
 .fl-pagination-ctlr ul li a:hover i svg{
