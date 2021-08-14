@@ -24,7 +24,9 @@
 	height: 4px;
 }
 
-.slick-dots li:only-child{ display: none; }
+.slick-dots li:only-child{ 
+	display: none; 
+}
 
 
 .sitemap{
