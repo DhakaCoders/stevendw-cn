@@ -24,22 +24,19 @@
 	left: 0;
 }
 .page-bnr-des{
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	z-index: 2;
+	position: relative;
+	padding-top: 232px;
+	z-index: 11;
+}
+.has-post-date .page-bnr-des{
+	padding-top: 182px;
 }
 .page-bnr-des-inr{
 	color: #fff;
 	position: relative;
 }
 .page-bnr-title{
-	padding-bottom: 110px;
+	padding-bottom: 30px;
 	margin-bottom: 0;
 	color: #fff;
 }
@@ -50,8 +47,9 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .has-post-date .page-bnr-title-ctlr{
-	padding-left: 105px;
+	padding-left: 110px;
 	position: relative;
 }
 .has-post-date .page-bnr-post-date{
@@ -69,7 +67,7 @@
 .sdw-back-btn-ctlr{
 	position: absolute;
 	left: 0;
-	bottom: 35px;
+	bottom: -70px;
 }
 .sdw-back-btn-ctlr a{
 	display: inline-block;
@@ -126,25 +124,25 @@
 	.page-banner{
 		height: 400px;
 	}
-	.page-bnr-title{
-		padding-bottom: 100px;
+	.page-bnr-des {
+	    padding-top: 225px;
 	}
 	.has-post-date .page-banner{
 		height: 440px;
 	}
-	.has-post-date .page-bnr-title {
-	    padding-bottom: 110px;
-	}
 	.has-post-date .page-bnr-title-ctlr {
 	    padding-left: 100px;
+	}
+	.sdw-back-btn-ctlr {
+	    bottom: -85px;
 	}
 }
 @media(max-width: 1399px){
 	.page-banner{
 		height: 370px;
 	}
-	.page-bnr-title{
-		padding-bottom: 90px;
+	.page-bnr-des {
+	    padding-top: 220px;
 	}
 	.has-post-date .page-bnr-title-ctlr {
 	    padding-left: 90px;
@@ -154,27 +152,33 @@
 	.page-banner{
 		height: 320px;
 	}
-	.page-bnr-title{
-		padding-bottom: 75px;
+	.page-bnr-des {
+	    padding-top: 200px;
+	}
+	.sdw-back-btn-ctlr {
+	    bottom: -100px;
 	}
 }
 @media(max-width: 991px){
 	.page-banner{
 		height: 280px;
 	}
-	.page-bnr-title{
-		padding-bottom: 60px;
+	.page-bnr-des {
+	    padding-top: 170px;
 	}
 	.has-post-date .page-bnr-title-ctlr {
 	    padding-left: 80px;
+	}
+	.sdw-back-btn-ctlr{
+		bottom: -105px;
 	}
 }
 @media(max-width: 767px){
 	.page-banner{
 		height: 220px;
 	}
-	.page-bnr-title{
-		padding-bottom: 40px;
+	.page-bnr-des {
+	    padding-top: 125px;
 	}
 	.has-post-date .page-banner{
 		height: 420px;
@@ -189,5 +193,21 @@
 	.page-bnr-title-ctlr{
 		max-width: 100%;
 		width: 100%;
+	}
+	.sdw-back-btn-ctlr {
+	    bottom: -25px;
+	}
+	.has-post-date .page-bnr-des {
+	    padding-top: 170px;
+	}
+}
+@media(max-width: 479px){
+	.sdw-back-btn-ctlr {
+	    bottom: 15px;
+	}
+}
+@media(max-width: 359px){
+	.sdw-back-btn-ctlr {
+	    bottom: 50px;
 	}
 }
