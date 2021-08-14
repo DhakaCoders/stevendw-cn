@@ -2,6 +2,11 @@
 	background: #0e0e0e;
 	position: relative;
 }
+.ftr-wave-line{
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
 .ftr-ornament-icon{
 	position: absolute;
 	top: 0;
@@ -62,7 +67,7 @@
 	width: 37%;
 	padding-right: 10px;
 }
-.ftr-tel{
+.ftr-mail{
 	margin-bottom: 30px;
 }
 .ftr-tel a,

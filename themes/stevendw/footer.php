@@ -1,4 +1,7 @@
   <footer class="footer-wrp">
+    <span class="ftr-wave-line">
+      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-wave-line.png">
+    </span>
     <span class="ftr-ornament-icon">
       <i>
          <img src="<?php echo THEME_URI; ?>/assets/images/ornament-icon.png">
@@ -14,11 +17,11 @@
               </div>
               <div class="ftr-desc-cntlr">
                 <div class="ftr-desc">
-                  <div class="ftr-tel">
-                    <a href="tel: +3253222333">+32 53 222 333</a>
-                  </div>
                   <div class="ftr-mail">
                     <a href="mailto: hello@stevendewolf.be">hello@stevendewolf.be</a>
+                  </div>
+                  <div class="ftr-tel">
+                    <a href="tel: +3253222333">+32 53 222 333</a>
                   </div>
                 </div>
                 <div class="ftr-socials">
