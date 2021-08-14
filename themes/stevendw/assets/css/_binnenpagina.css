@@ -906,7 +906,6 @@ hr{
 	    padding-bottom: 50px;
 	}
 	#news-details.default-page-con {
-	    padding-bottom: 35px;
 	    padding-top: 40px;
 	}
 	#news-details .dfp-one-img-plate-bx {
@@ -957,6 +956,9 @@ hr{
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.sdw-related-product-sec .sec-entry-hdr-title.fl-h2{
+		font-size: 36px;
 	}
 
 	
