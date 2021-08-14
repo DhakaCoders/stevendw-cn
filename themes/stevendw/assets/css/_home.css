@@ -392,9 +392,9 @@ body.home .page-body-cntlr{
     opacity: 0;
 }
 .sdw-service-con{
-	transition: all 3s;
-    -ms-transition: all 3s;
-    -webkit-transition: all 3s;
+	transition: all 2.5s;
+    -ms-transition: all 2.5s;
+    -webkit-transition: all 2.5s;
 }
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
