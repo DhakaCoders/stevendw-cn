@@ -14,6 +14,8 @@
 }
 .footer-cntlr{
 	padding-top: 95px;
+	position: relative;
+	z-index: 12;
 }
 .ftr-top{
 	padding-bottom: 95px;
