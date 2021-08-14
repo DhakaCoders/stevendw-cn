@@ -172,4 +172,8 @@
 	.has-post-date .page-bnr-title-ctlr {
 	    padding-left: 70px;
 	}
+	.page-bnr-title-ctlr{
+		max-width: 100%;
+		width: 100%;
+	}
 }
