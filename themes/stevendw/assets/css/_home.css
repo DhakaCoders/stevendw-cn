@@ -645,7 +645,7 @@ body.home .page-body-cntlr{
 	}
 	.ftr-top-grid-item-img{
 		height: 351px;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	.ftr-top-grid-item-btm{
 		position: static;
@@ -685,7 +685,7 @@ body.home .page-body-cntlr{
 		right: 20px!important;
 	}
 	.sdw-service-con{
-		opacity: 0;
+		display: none;
 	}
 	.sdw-service-con-hover{
 		transform: scale3d(1,1,1);
