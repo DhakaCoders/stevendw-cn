@@ -2,7 +2,7 @@
 /**
 Constants->>
 */
-defined('THEME_NAME') or define('THEME_NAME', 'trium');
+defined('THEME_NAME') or define('THEME_NAME', 'stevendw');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
@@ -15,7 +15,7 @@ if( !function_exists('cbv_theme_setup') ){
     
     function cbv_theme_setup(){
         
-      load_theme_textdomain( 'trium', get_template_directory() . '/languages' );
+      load_theme_textdomain( 'stevendw', get_template_directory() . '/languages' );
         add_theme_support( 'title-tag' );
         add_theme_support('woocommerce');
         add_theme_support('post-thumbnails');
