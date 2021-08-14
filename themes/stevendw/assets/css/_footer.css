@@ -6,6 +6,11 @@
 	position: absolute;
 	right: 0;
 	top: 50px;
+	display: none;
+	width: 45%;
+}
+.home .ftr-wave-line{
+	display: block;
 }
 .ftr-ornament-icon{
 	position: absolute;
@@ -184,8 +189,9 @@
 	.footer-wrp{
 		padding-top: 90px;
 	}
-	.ftr-ornament-icon{
-		display: none;
+	.ftr-ornament-icon,
+	body.home .ftr-wave-line{
+		display: none
 	}
 	.ftr-title.fl-h2{
 		font-size: 48px;
