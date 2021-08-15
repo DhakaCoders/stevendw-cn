@@ -537,7 +537,9 @@ body.home .page-body-cntlr{
 	.ftr-top-grid-item-img{
 		height: 420px;
 	}
-	
+	.business-element-man{
+		top: auto;
+	}
 }
 @media(max-width: 767px){
 	.hm-banner-cntlr{
@@ -553,12 +555,23 @@ body.home .page-body-cntlr{
 	.round-icon i svg{
 		max-width: 203px;
 	}
+	.round-icon{
+		width: 108px;
+		height: 196px;
+		display: flex;
+		align-items: center;
+	}
+	.round-icon i img{
+		width: 100%;
+		height: auto;
+	}
 	.business-element-sec-cntlr{
 		padding-top: 225px;
 		margin-top: -95px;
+		overflow: initial;
 	}
 	.round-icon{
-		top: -30px;
+		top: 0;
 		z-index: 6;
 	}
 	.business-element-man{
@@ -737,7 +750,6 @@ body.home .page-body-cntlr{
 	}
 	.round-icon {
 	    max-width: 150px;
-	    top: -8px;
 	}
 	.hm-banner-cntlr {
 	    height: 580px;
@@ -749,7 +761,6 @@ body.home .page-body-cntlr{
 @media(max-width: 479px){
 	.round-icon {
 	    max-width: 120px;
-	    top: 4px;
 	}
 
 }
@@ -758,7 +769,6 @@ body.home .page-body-cntlr{
 @media(max-width: 369px){
 	.round-icon {
 	    max-width: 100px;
-	    top: 16px;
 	}
 
 
