@@ -203,11 +203,14 @@
 }
 @media(max-width: 479px){
 	.sdw-back-btn-ctlr {
-	    bottom: 15px;
+	    bottom: 28px;
+	}
+	.has-post-date .page-bnr-des {
+	    padding-top: 145px;
 	}
 }
 @media(max-width: 359px){
 	.sdw-back-btn-ctlr {
-	    bottom: 50px;
+	    bottom: 30px;
 	}
 }

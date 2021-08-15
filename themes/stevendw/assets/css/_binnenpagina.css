@@ -970,6 +970,12 @@ hr{
 	.sdw-related-pro-grd-item:nth-child(2) {
 	    margin-top: 0;
 	}
+	.relatedProGrdSlider .news-overview-grid-item{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.sdw-related-product-sec {
 	    padding-bottom: 70px;
 	}
