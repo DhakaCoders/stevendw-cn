@@ -139,22 +139,6 @@ function custom_body_classes($classes){
     $classes[] = join(' ', array_filter($browsers, function ($browser) {
         return $GLOBALS[$browser];
     }));
-
-    if( is_front_page() ){
-        $classes[]='border-cntlr';
-    }
-    if( is_page_template('page-contact.php') ){
-        $classes[]='border-cntlr';
-    }
-    if( is_page_template('page-overons.php') ){
-        $classes[]='border-cntlr';
-    }
-    if( is_single() && 'diensten' == get_post_type() ){
-        $classes[]='border-cntlr';
-    }
-    if( is_single() && 'referenties' == get_post_type() ){
-        $classes[]='border-cntlr';
-    }
     return $classes;
 }
 // call the filter for the body class

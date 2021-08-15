@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>> 
 <head>
-  <meta charset="utf-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#EE3E15">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -173,6 +173,8 @@
 <body <?php body_class(); ?>>
 <div class="page-body-cntlr">
 <?php 
+  $telefoon = get_field('telefoon', 'options');
+  $email = get_field('emailadres', 'options');
   $topbartekst = get_field('topbartekst', 'options');
   $telefoon = get_field('telefoon', 'options');
   $logoObj = get_field('hdlogo', 'options');
@@ -283,13 +285,10 @@
 
     <div class="xs-mbl-btm">
       <div class="xs-mbl-btm-desc">
-        <div class="xs-mbl-btm-mail">
-          <a href="mailto: hello@stevendewolf.be">hello@stevendewolf.be</a>
-        </div>
-        <div class="xs-mbl-btm-tel">
-          <a href="tel: +3253222333">+32 53 222 333</a>
-        </div>
-       
+        <?php 
+          if( !empty($email) ) printf('<div class="xs-mbl-btm-mail"><a href="mailto:%s">%s</a></div> ', $email, $email);  
+          if( !empty($telefoon) ) printf('<div class="xs-mbl-btm-tel"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon); 
+        ?>
       </div>
       <div class="xs-mbl-btm-socials">
         <ul class="reset-list">

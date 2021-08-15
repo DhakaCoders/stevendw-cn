@@ -24,13 +24,10 @@
               </div>
               <div class="ftr-desc-cntlr">
                 <div class="ftr-desc">
-                  
-                  <div class="ftr-mail">
-                    <a href="mailto: hello@stevendewolf.be">hello@stevendewolf.be</a>
-                  </div>
-                  <div class="ftr-tel">
-                    <a href="tel: +3253222333">+32 53 222 333</a>
-                  </div>
+                <?php 
+                  if( !empty($email) ) printf('<div class="ftr-mail"><a href="mailto:%s">%s</a></div> ', $email, $email);  
+                  if( !empty($telefoon) ) printf('<div class="ftr-tel"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon); 
+                ?>
                 </div>
                 <div class="ftr-socials">
                   <ul class="reset-list">
