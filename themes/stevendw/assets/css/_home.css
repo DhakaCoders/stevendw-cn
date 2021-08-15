@@ -381,9 +381,6 @@ body.home .page-body-cntlr{
 
 
 .sdw-service-con-hover{
-	transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -webkit-transition: all 0.6s;
     transform: scale3d(1,0,1);
     -ms-transform: scale3d(1,0,1);
     -webkit-transform: scale3d(1,0,1);
@@ -392,9 +389,9 @@ body.home .page-body-cntlr{
     opacity: 0;
 }
 .sdw-service-con{
-	transition: all 2.5s;
-    -ms-transition: all 2.5s;
-    -webkit-transition: all 2.5s;
+	transition: all 1.7s;
+    -ms-transition: all 1.7s;
+    -webkit-transition: all 1.7s;
 }
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
