@@ -172,6 +172,30 @@
 </head>
 <body <?php body_class(); ?>>
 <div class="page-body-cntlr">
+<?php 
+  $topbartekst = get_field('topbartekst', 'options');
+  $telefoon = get_field('telefoon', 'options');
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $smedias = get_field('social_media', 'options');
+?>  
+<?php if( is_front_page() && $topbartekst ): ?>
+  <section class="home-messege">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-messege-inr">
+            <?php if( !empty($topbartekst) ) echo wpautop( $topbartekst  ); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
   <div class="bdoverlay"></div>
   <header class="header">
     <div class="container">
@@ -179,24 +203,25 @@
         <div class="col-md-12">
           <div class="header-inr clearfix">
             <div class="hdr-lft">
+              <?php if( !empty($logo_tag) ): ?>
               <div class="logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
               </div>
+              <?php endif; ?>
             </div>
             <div class="hdr-rgt">
               <nav class="main-nav hide-sm">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">About</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Solutions</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">submenu 1</a></li>
-                      <li><a href="#">submenu 1</a></li>
-                      <li><a href="#">submenu 1</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Cases</a></li>
-                </ul>
+                <?php 
+                  $menuOptions = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions ); 
+                ?>
               </nav>
               <div class="hamburger-cntlr show-sm">
                 <div class="hamburger-icon">
@@ -215,9 +240,7 @@
   <div class="xs-mobile-menu">
     <div class="xs-hdr-ornament-icon-cntlr">
       <i>
-        <svg class="xs-hdr-ornament-icon" width="59" height="209" viewBox="0 0 59 209" fill="transparent">
-          <use xlink:href="#xs-hdr-ornament-icon"></use> 
-        </svg>
+        <img src="<?php echo THEME_URI; ?>/assets/images/xs-hdr-ornament-icon.png">
       </i>
     </div>
     <span class="hdr-xs-round-icon">
@@ -225,9 +248,13 @@
     </span>
     <div class="xs-mbl-hdr">
       <div class="hdr-lft">
+        <?php if( !empty($logo_tag) ): ?>
         <div class="logo">
-          <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
         </div>
+        <?php endif; ?>
       </div>
       <div class="hdr-rgt">
         <div class="hamburger-cntlr show-sm">
@@ -242,34 +269,33 @@
 
     <div class="xs-menu">
       <nav class="main-nav">
-        <ul class="clearfix reset-list">
-          <li class="current-menu-item"><a href="#">About</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">Solutions</a>
-            <ul class="sub-menu">
-              <li><a href="#">submenu 1</a></li>
-              <li><a href="#">submenu 1</a></li>
-              <li><a href="#">submenu 1</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Cases</a></li>
-        </ul>
+        <?php 
+          $mobilemenuOptions = array( 
+              'theme_location' => 'cbv_mobile_main_menu', 
+              'menu_class' => 'clearfix reset-list',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $mobilemenuOptions ); 
+        ?>
       </nav>
     </div>
 
     <div class="xs-mbl-btm">
       <div class="xs-mbl-btm-desc">
-        <div class="xs-mbl-btm-tel">
-          <a href="tel: +3253222333">+32 53 222 333</a>
-        </div>
         <div class="xs-mbl-btm-mail">
           <a href="mailto: hello@stevendewolf.be">hello@stevendewolf.be</a>
         </div>
+        <div class="xs-mbl-btm-tel">
+          <a href="tel: +3253222333">+32 53 222 333</a>
+        </div>
+       
       </div>
       <div class="xs-mbl-btm-socials">
         <ul class="reset-list">
+          <?php if( !empty($smedias['facebook_url']) ): ?>
           <li>
-            <a target="_blank" href="#">
+            <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
               <i>
                 <svg class="facebook-icon" width="10" height="18" viewBox="0 0 10 18" fill="#fff">
                   <use xlink:href="#facebook-icon"></use> 
@@ -277,29 +303,10 @@
               </i>
             </a>
           </li>
-
-          <li>
-            <a target="_blank" href="#">
-              <i>
-                <svg class="instagram-icon" width="18" height="18" viewBox="0 0 18 18" fill="#fff">
-                  <use xlink:href="#instagram-icon"></use> 
-                </svg>
-              </i>
-            </a>
-          </li>
-
-          <li>
-            <a target="_blank" href="#">
-              <i>
-                <svg class="linkedin-icon" width="18" height="18" viewBox="0 0 18 18" fill="#fff">
-                  <use xlink:href="#linkedin-icon"></use> 
-                </svg>
-              </i>
-            </a>
-          </li>
-
-          <li>
-            <a target="_blank" href="#">
+          <?php endif; ?>
+          <?php if( !empty($smedias['twitter_url']) ): ?>
+           <li>
+            <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
               <i>
                 <svg class="twitter-icon" width="23" height="18" viewBox="0 0 23 18" fill="#fff">
                   <use xlink:href="#twitter-icon"></use> 
@@ -307,7 +314,29 @@
               </i>
             </a>
           </li>
-
+          <?php endif; ?>
+          <?php if( !empty($smedias['linkedin_url']) ): ?>
+          <li>
+            <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+              <i>
+                <svg class="linkedin-icon" width="18" height="18" viewBox="0 0 18 18" fill="#fff">
+                  <use xlink:href="#linkedin-icon"></use> 
+                </svg>
+              </i>
+            </a>
+          </li>
+          <?php endif; ?>
+          <?php if( !empty($smedias['instagram_url']) ): ?>
+          <li>
+            <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+              <i>
+                <svg class="instagram-icon" width="18" height="18" viewBox="0 0 18 18" fill="#fff">
+                  <use xlink:href="#instagram-icon"></use> 
+                </svg>
+              </i>
+            </a>
+          </li>
+          <?php endif; ?>
         </ul>
       </div>
 
