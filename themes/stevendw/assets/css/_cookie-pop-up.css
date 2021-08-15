@@ -215,9 +215,9 @@
     left: auto!important;
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button{
-    background: #1A7ABE!important;
+    background: #2DAB52!important;
     text-transform: uppercase!important;
-    border-color: #1A7ABE!important;
+    border-color: #2DAB52!important;
     color: #fff!important;
 
 }
@@ -586,7 +586,7 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     top: 32px;
 }
 #moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme {
-    background-color: #1A7ABE!important;
+    background-color: #2DAB52!important;
     border: none!important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button {
@@ -603,22 +603,25 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     z-index: 2;
     margin: 0 10px!important;
     opacity: 1!important;
-    box-shadow: none!important;
     padding: 10px 30px 7px!important;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.1); 
+    
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:first-child{
     background: #fff!important;    
-    color: #1A7ABE!important;
+    color: #2DAB52!important;
     text-shadow: none;
+    box-shadow: none!important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:last-child{
-    margin-right: 0!important;    
+    margin-right: 0!important;   
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover{
     background: #fff!important;   
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover:first-child{
     background: transparent!important;
+    text-shadow: 0px 6px 2px rgba(0, 0, 0, 0.1)!important;
 }
 
 .main-modal-content .moove-gdpr-tab-content p{
@@ -632,7 +635,7 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover:last-child{
     background: #fff!important;
-    color: #1A7ABE!important;
+    color: #2DAB52!important;
 }
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container{
     padding: 20px 40px!important;
@@ -728,12 +731,12 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton{
     background: transparent!important;
-    color: #1A7ABE!important;
+    color: #2DAB52!important;
     font-weight: 700!important;
     font-size: 16px!important;
     line-height: 16px!important;
     text-transform: uppercase!important;
-    border: 1px solid #1A7ABE!important;
+    border: 1px solid #2DAB52!important;
     /*max-width: 190px!important;*/
     max-width: 194px!important; 
     width: 100%;
@@ -750,8 +753,8 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     margin-right: 0!important;    
 }
 #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover{
-    background: #1A7ABE!important;
-    border-color: #1A7ABE!important;
+    background: #2DAB52!important;
+    border-color: #2DAB52!important;
     color: #fff!important;
 }
 #moove_gdpr_cookie_modal .cookie-switch .cookie-slider{
@@ -782,7 +785,7 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
 #moove_gdpr_cookie_modal .cookie-switch .cookie-slider.cookie-round{
     height: 40px!important;
     width: 72px!important;
-    background: #1A7ABE!important;
+    background: #2DAB52!important;
     box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)!important;
     border-radius: 32px!important;
 }
@@ -908,7 +911,6 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     #moove_gdpr_cookie_modal .cookie-switch .cookie-slider.cookie-round {
         height: 35px!important;
         width: 65px!important;
-        background: #1A7ABE!important;
     }
     #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content p {
         font-size: 15px!important;

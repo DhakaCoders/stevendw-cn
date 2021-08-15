@@ -81,8 +81,7 @@ nav.main-nav > ul > li > a:after{
 }
 nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a:hover,
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
-nav.main-nav > ul > li > a:hover,
-nav.main-nav > ul > li.current-menu-item > a{
+nav.main-nav > ul > li > a:hover{
 	color: #00A04D;
 }
 nav.main-nav > ul > li:hover > a:after,
@@ -329,7 +328,9 @@ body.allWork {
 
 /*responsive*/
 @media(max-width: 1699px){
-
+	.logo a{
+		max-width: 300px;
+	}
 }
 @media(max-width: 1499px){
 	
