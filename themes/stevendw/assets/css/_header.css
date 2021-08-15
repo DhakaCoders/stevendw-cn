@@ -328,7 +328,9 @@ body.allWork {
 
 /*responsive*/
 @media(max-width: 1699px){
-
+	.logo a{
+		max-width: 300px;
+	}
 }
 @media(max-width: 1499px){
 	
