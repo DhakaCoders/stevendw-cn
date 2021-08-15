@@ -389,9 +389,9 @@ body.home .page-body-cntlr{
     opacity: 0;
 }
 .sdw-service-con{
-	transition: all 1.7s;
-    -ms-transition: all 1.7s;
-    -webkit-transition: all 1.7s;
+	transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -webkit-transition: all 1.5s;
 }
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
