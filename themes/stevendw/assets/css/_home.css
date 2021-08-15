@@ -381,9 +381,9 @@ body.home .page-body-cntlr{
 
 
 .sdw-service-con-hover{
-	transition: all 1s;
-    -ms-transition: all 1s;
-    -webkit-transition: all 1s;
+	transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -webkit-transition: all 0.7s;
     transform: scale3d(1,0,1);
     -ms-transform: scale3d(1,0,1);
     -webkit-transform: scale3d(1,0,1);
@@ -408,7 +408,11 @@ body.home .page-body-cntlr{
     -webkit-transform: scale3d(1,1,1);
     -o-transform: scale3d(1,1,1);
     opacity: 1;
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
 }
+
 
 
 
