@@ -726,6 +726,9 @@ body.home .page-body-cntlr{
 	.home .footer-wrp{
 		padding-top: 0;
 	}
+	.hm-banner-cntlr {
+	    height: 620px;
+	}
 
 }
 @media(max-width: 575px){
@@ -736,6 +739,9 @@ body.home .page-body-cntlr{
 	    max-width: 150px;
 	    top: -8px;
 	}
+	.hm-banner-cntlr {
+	    height: 580px;
+	}
 
 }
 
@@ -743,7 +749,7 @@ body.home .page-body-cntlr{
 @media(max-width: 479px){
 	.round-icon {
 	    max-width: 120px;
-	    top: 8px;
+	    top: 4px;
 	}
 
 }
