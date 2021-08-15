@@ -537,7 +537,9 @@ body.home .page-body-cntlr{
 	.ftr-top-grid-item-img{
 		height: 420px;
 	}
-	
+	.business-element-man{
+		top: auto;
+	}
 }
 @media(max-width: 767px){
 	.hm-banner-cntlr{
