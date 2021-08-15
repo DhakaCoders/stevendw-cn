@@ -201,12 +201,20 @@
 	    padding-top: 170px;
 	}
 }
+@media(max-width: 575px){
+	.page-bnr-title{
+		font-size: 45px!important;
+	}
+}
 @media(max-width: 479px){
 	.sdw-back-btn-ctlr {
 	    bottom: 28px;
 	}
 	.has-post-date .page-bnr-des {
 	    padding-top: 145px;
+	}
+	.page-bnr-title{
+		font-size: 40px!important;
 	}
 }
 @media(max-width: 359px){
