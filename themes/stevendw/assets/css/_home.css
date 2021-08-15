@@ -381,9 +381,6 @@ body.home .page-body-cntlr{
 
 
 .sdw-service-con-hover{
-	transition: all 1s;
-    -ms-transition: all 1s;
-    -webkit-transition: all 1s;
     transform: scale3d(1,0,1);
     -ms-transform: scale3d(1,0,1);
     -webkit-transform: scale3d(1,0,1);
@@ -392,9 +389,9 @@ body.home .page-body-cntlr{
     opacity: 0;
 }
 .sdw-service-con{
-	transition: all 2.5s;
-    -ms-transition: all 2.5s;
-    -webkit-transition: all 2.5s;
+	transition: all 2s;
+    -ms-transition: all 2s;
+    -webkit-transition: all 2s;
 }
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
@@ -408,6 +405,9 @@ body.home .page-body-cntlr{
     -webkit-transform: scale3d(1,1,1);
     -o-transform: scale3d(1,1,1);
     opacity: 1;
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
 

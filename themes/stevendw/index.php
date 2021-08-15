@@ -87,8 +87,8 @@ if($banner):
 				echo paginate_links( array(
 				  'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 				  'type'      => 'list',
-				  'prev_text' => __('<i><svg class="pagi-left-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#1A7ABE"><use xlink:href="#pagi-left-arrow"></use></svg></i>'),
-				  'next_text' => __('<i><svg class="pagi-right-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#1A7ABE"><use xlink:href="#pagi-right-arrow"></use></svg></i>'),
+				  'prev_text' => __('<i><svg class="pagi-left-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#2DAB52"><use xlink:href="#pagi-left-arrow"></use></svg></i>'),
+				  'next_text' => __('<i><svg class="pagi-right-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#2DAB52"><use xlink:href="#pagi-right-arrow"></use></svg></i>'),
 				  'format'    => '?paged=%#%',
 				  'current'   => $current,
 				  'total'     => $wp_query->max_num_pages
