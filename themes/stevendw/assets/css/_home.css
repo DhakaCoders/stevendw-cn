@@ -418,11 +418,14 @@ body.home .page-body-cntlr{
 	.sec-entry-hdr{
 		max-width: 810px;
 	}
+	.hm-bnr-desc p{
+		font-size: 22px;
+	}
 }
 
 @media(max-width: 1499px){
 	.hm-bnr-desc p{
-		font-size: 22px;
+		font-size: 21px;
 	}
 	.round-icon i svg{
 		max-width: 253px;
