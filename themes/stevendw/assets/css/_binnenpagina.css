@@ -982,11 +982,18 @@ hr{
 	.dfp-title-des-module .title-desc-module{
 		width: 100%;
 	}
+	.dfp-title-des-module{
+		overflow-x: initial!important;
+	}
 	.dfp-title-des-module .title-desc-module-rgt{
 		max-width: 100%;
 		padding-bottom: 60px;
 		text-align: center;
+		overflow-x: initial!important;
 	}
+	/*.dfp-title-des-module .title-desc-module-rgt::-webkit-scrollbar{
+		height: 0;
+	}*/
 	.dfp-title-des-module .title-desc-module-lft{
 		text-align: center;
 	}
