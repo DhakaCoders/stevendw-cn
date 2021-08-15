@@ -425,11 +425,25 @@ body.home .page-body-cntlr{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.hm-bnr-desc{
+		max-width: 790px;
+	}
+	.round-icon{
+		max-width: 180px;
+		width: 100%;
+	}
+	.round-icon i svg{
+		max-width: 100%!important;
+		height: auto;
+	}
 }
 
 @media(max-width: 1499px){
 	.hm-bnr-desc p{
-		font-size: 21px;
+		font-size: 19px;
+	}
+	.hm-bnr-desc {
+	    max-width: 683px;
 	}
 	.round-icon i svg{
 		max-width: 253px;

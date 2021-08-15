@@ -7,7 +7,7 @@
 		max-width: 1240px;
 	}
 	h1,.fl-h1{
-		font-size: 90px;
+		font-size: 85px;
 	}
 	h2,.fl-h2{
 		font-size: 60px;
@@ -30,7 +30,7 @@
 }
 @media (max-width: 1499px) {
 	h1,.fl-h1{
-		font-size: 84px;
+		font-size: 80px;
 	}
 	h2,.fl-h2{
 		font-size: 54px;
@@ -57,7 +57,7 @@
 		max-width: 1140px;
 	}
 	h1,.fl-h1{
-		font-size: 78px;
+		font-size: 75px;
 	}
 	h2,.fl-h2{
 		font-size: 50px;
