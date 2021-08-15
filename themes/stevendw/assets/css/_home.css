@@ -26,6 +26,7 @@
 
 body.home .page-body-cntlr{
 	background: #0e0e0e;
+	overflow: hidden;
 }
 .hm-banner{
 	position: relative;
@@ -102,7 +103,7 @@ body.home .page-body-cntlr{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 1128px;
+	height: 678px;
 	position: relative;
 	z-index: 3;
 }
@@ -417,15 +418,9 @@ body.home .page-body-cntlr{
 	.sec-entry-hdr{
 		max-width: 810px;
 	}
-	.hm-banner-cntlr{
-		height: 950px;
-	}
 }
 
 @media(max-width: 1499px){
-	.hm-banner-cntlr{
-		height: 678px;
-	}
 	.hm-bnr-desc p{
 		font-size: 22px;
 	}

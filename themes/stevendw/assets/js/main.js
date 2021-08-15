@@ -185,7 +185,7 @@ if( $('li.menu-item-has-children a').length ){
 }
 
 
-if (windowWidth >= 767) {
+if (windowWidth > 767) {
   if( $('.hm-banner-cntlr').length ){
     var windowHeight = $(window).height();
     if (windowHeight >= 678) {
