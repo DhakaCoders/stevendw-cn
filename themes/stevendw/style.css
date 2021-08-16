@@ -13,3 +13,7 @@ Text Domain: stevendw
 
 @import url('assets/css/main.css');
 
+
+.hm-banner-bg{
+	width: 0;
+}
