@@ -981,15 +981,16 @@ hr{
 	}
 	.dfp-title-des-module .title-desc-module{
 		width: 100%;
+		display: block;
 	}
 	.dfp-title-des-module{
 		overflow-x: initial!important;
 	}
 	.dfp-title-des-module .title-desc-module-rgt{
-		max-width: 100%;
-		padding-bottom: 60px;
+		padding-bottom: 33px;
 		text-align: center;
 		overflow-x: initial!important;
+		white-space: initial!important;
 	}
 	.dfp-title-des-module .title-desc-module-rgt div{
 		width: 100%!important;
