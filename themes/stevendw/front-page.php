@@ -61,8 +61,8 @@ if($intro):
                   <img src="<?php echo THEME_URI; ?>/assets/images/man-xs-img.png" alt="">
                 </div>
                 <div class="slsn-bsns-item-ditet-icon">
-                  <img class="rotating" src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
-                  <img class="rotating" src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
+                  <img class="rotating2" src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
+                  <img class="rotating2" src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
                 </div>
                 <?php if( !empty($solus = $intro['solutions']) ): ?>
                 <div class="slsn-bsns-grd slsnBsnsSlider clearfix">
@@ -70,7 +70,7 @@ if($intro):
                     $i = 1; foreach( $solus as $solu ): 
                   ?>
                   <div class="slsn-bsns-item-wrap">
-                    <div class="slsn-bsns-item-cntlr<?php echo ($i <= 2 )? ' slsn-bsns-item-cntlr-'.$i: ''; ?> ">
+                    <div class="floating slsn-bsns-item-cntlr<?php echo ($i <= 2 )? ' slsn-bsns-item-cntlr-'.$i: ''; ?> ">
                       <div class="slsn-bsns-item">
                         <div class="slsn-bsns-item-image">
                           <?php 

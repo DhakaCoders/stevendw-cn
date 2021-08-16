@@ -3,6 +3,10 @@ var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
+
+$(window).load(function() {
+    $('.home').addClass('banner-effect');
+});
 	
 if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
