@@ -185,7 +185,7 @@
 	}
 	.has-post-date .page-bnr-title {
 	    padding-bottom: 130px;
-	    font-size: 36px;
+	    font-size: 36px!important;
 	}
 	.has-post-date .page-bnr-title-ctlr {
 	    padding-left: 70px;
@@ -205,6 +205,9 @@
 	.page-bnr-title{
 		font-size: 45px!important;
 	}
+	.sdw-back-btn-ctlr {
+	    bottom: -15px;
+	}
 }
 @media(max-width: 479px){
 	.sdw-back-btn-ctlr {
@@ -216,9 +219,15 @@
 	.page-bnr-title{
 		font-size: 40px!important;
 	}
+	.has-post-date .page-bnr-title {
+	    font-size: 36px!important;
+	}
 }
 @media(max-width: 359px){
 	.sdw-back-btn-ctlr {
 	    bottom: 30px;
+	}
+	.has-post-date .page-banner {
+	    height: 420px;
 	}
 }
