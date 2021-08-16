@@ -35,7 +35,7 @@ $intro = get_field('intro_text', HOMEID);
 if($intro):
 ?>
   <div id="business-element-sec" class="business-element-sec-cntlr">
-    <span class="business-element-man">
+    <span class="business-element-man hide-sm">
       <img src="<?php echo THEME_URI; ?>/assets/images/business-element-man.png" alt="">
     </span>
     <div class="round-icon">
@@ -57,6 +57,9 @@ if($intro):
                 </div>
               </div>
               <div class="solutions-business-grd-cntlr">
+                <div class="man-xs-img show-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/man-xs-img.png" alt="">
+                </div>
                 <div class="slsn-bsns-item-ditet-icon">
                   <img src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
                   <img src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
