@@ -36,8 +36,24 @@ body.home .page-body-cntlr{
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
+	left: auto;
+	width: 0;
 	z-index: 2;
+	transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+}
+.banner-effect .hm-banner-bg{
+	width: 100%;
+}
+.hm-banner-bg-black{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: #000;
 }
 .hm-banner-overlay{
 	position: absolute;
@@ -527,6 +543,28 @@ body.home .page-body-cntlr{
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 10px); }
     to   { transform: translate(0, -0px); }    
+}
+
+
+.banner-effect .hm-bnr-title{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.banner-effect .hm-bnr-desc p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;	
 }
 
 
