@@ -150,13 +150,14 @@ body.home .page-body-cntlr{
 
 
 .solutions-business-sec{
-	padding-bottom: 250px;
+	padding-bottom: 200px;
 	position: relative;
 	z-index: 8;
 }
 .element-sec{
 	position: relative;
 	z-index: 8;
+	padding-top: 50px;
 }
 
 .sec-entry-hdr{
@@ -257,6 +258,16 @@ body.home .page-body-cntlr{
 .element-sec{
 
 }
+.man-xs-img{
+	position: absolute;
+	top: 0;
+	right: -20px;
+	transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+}
+
 .element-sec-cntlr{
 
 }
@@ -458,7 +469,7 @@ body.home .page-body-cntlr{
 		font-size: 15px;
 	}
 	.solutions-business-sec{
-		padding-bottom: 200px;
+		padding-bottom: 150px;
 	}
 	.ftr-top-grid-item-btm-desc > p{
 		font-size: 15px;
@@ -498,7 +509,7 @@ body.home .page-body-cntlr{
 		font-size: 42px;
 	}
 	.solutions-business-sec{
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	.title-desc-module{
 		margin-bottom: 60px;
@@ -636,7 +647,7 @@ body.home .page-body-cntlr{
 		z-index: 2;
 	}
 	.solutions-business-sec{
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 	}
 	.slsn-bsns-item-ditet-icon img:first-child{
 		display: none;
