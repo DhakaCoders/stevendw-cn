@@ -590,9 +590,16 @@ body.home .page-body-cntlr{
 		font-size: 30px;
 	}
 	.slsnBsnsSlider{
+		max-width: 100%;
+		width: 100%;
+		background: rgba(20, 20, 20, 0.75);
+	}
+	.slsn-bsns-item{
 		max-width: 400px;
 		width: 100%;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		background: transparent;
 	}
 	.slsnBsnsSlider.slick-dotted.slick-slider{
 		margin-bottom: 0;
