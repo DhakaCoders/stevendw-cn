@@ -257,6 +257,15 @@ if( $('.scrollto').length ){
   });
 }
 
+
+if( $('li.scrollto > a').length ){
+  $('li.scrollto > a').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
+
 function goToByScroll(id, offset){
   if(id){
     // Remove "link" from the ID
