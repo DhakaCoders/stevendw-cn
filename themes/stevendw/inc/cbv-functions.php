@@ -236,6 +236,12 @@ function diensten_placeholder($format = 'src'){
   return '';
 
 }
+
+add_filter( 'nav_menu_link_attributes', 'add_data_atts_to_nav', 10, 4 );
+function add_data_atts_to_nav( $atts, $item, $args ) {
+    $atts['data-to'] = '#'.strtolower(str_replace("_","",$item->title)).'-sec';
+    return $atts;
+}
 function bv_get_current_year(){
     return date('Y');
 }
