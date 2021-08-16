@@ -41,7 +41,7 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
               <?php if( !empty($fctitle) ):?>
               <div class="block-850">
                 <div class="dfp-promo-module-des">
-                  <?php printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $fctitle); ?>
+                  <?php printf('<strong class="dfp-promo-module-title fl-h2">%s</strong>', $fctitle); ?>
                 </div>
               </div>
               <?php endif; ?>

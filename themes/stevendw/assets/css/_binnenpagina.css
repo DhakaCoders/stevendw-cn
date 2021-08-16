@@ -47,7 +47,13 @@
 .default-page-con h4{
 	color: #565B5E;
 }
-
+.dfp-promo-module-title{
+	color: #141414;
+	font-family: 'Aldo-SemiBold';
+	display: block;
+	margin-bottom: 0!important;
+	padding-top: 20px;
+}
 
 .dfp-text-module{
 	
