@@ -479,19 +479,19 @@ body.home .page-body-cntlr{
 
 
 
-.floating{
+.floating-1{
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
-.floating-1{
+.floating-2{
 	animation-name: floating_1;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
-.floating-2{
+.floating-3{
 	animation-name: floating_2;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
