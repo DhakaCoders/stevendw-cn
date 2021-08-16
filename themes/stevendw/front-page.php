@@ -8,11 +8,13 @@
     <span class="hm-banner-overlay" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner-overlay.png');"></span>
     <div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo $banner; ?>');">
     </div>
-    <div class="hm-bnr-down-scroll downAnimate scrollto" data-to="#business-element-sec">
-      <span class="hm-bnr-scroll-title">scroll</span>
-      <span class="hm-bnr-scroll-icon scroll-icon-Animate">
-        <img src="<?php echo THEME_URI; ?>/assets/images/arrow-scroll.png" alt="">
-      </span>
+    <div class="hm-bnr-down-scroll link downAnimate scrollto" data-to="#business-element-sec">
+        <span class="link__arrow">
+          <span></span>
+          <span></span>
+        </span>
+        <span class="link__line"></span>
+        <span class="hm-bnr-scroll-title link__text">scroll</span>
     </div>
     <div class="container">
       <div class="row">

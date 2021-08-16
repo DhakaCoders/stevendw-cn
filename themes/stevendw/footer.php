@@ -9,7 +9,7 @@
     <span class="ftr-wave-line">
       <img src="<?php echo THEME_URI; ?>/assets/images/ftr-wave-line.png">
     </span>
-    <span class="ftr-ornament-icon rotating">
+    <span class="ftr-ornament-icon rotating2">
       <i>
          <img src="<?php echo THEME_URI; ?>/assets/images/ornament-icon.png">
       </i>

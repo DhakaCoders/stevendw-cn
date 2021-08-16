@@ -39,12 +39,13 @@ body.home .page-body-cntlr{
 	left: auto;
 	width: 0;
 	z-index: 2;
-	transition: all 0.7s;
-	-ms-transition: all 0.7s;
-	-webkit-transition: all 0.7s;
+	transition: all 1s;
+	-ms-transition: all 1s;
+	-webkit-transition: all 1s;
 }
 .banner-effect .hm-banner-bg{
 	width: 100%;
+	left: 0;
 }
 .hm-banner-bg-black{
 	position: absolute;
@@ -72,10 +73,6 @@ body.home .page-body-cntlr{
 	z-index: 8;
 	bottom: -25px;
 	left: 50%;
-	transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
 	cursor: pointer;
 
 }
@@ -109,12 +106,109 @@ body.home .page-body-cntlr{
 	line-height: 1;
 	text-transform: uppercase;
 	color: #2DAB52;
-	transform: rotate(-90deg);
+/*	transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);*/
 	display: inline-block;
 }
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    transform:  translateX(-50%) rotate(-90deg);
+    -ms-transform: translateX(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) rotate(-90deg);
+}
+
+.link__arrow {
+    display: inline-flex;
+}
+
+.link__arrow span {
+    position: relative;
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 2;
+}
+.link__arrow span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2DAB52;
+}
+
+.link__arrow span:nth-child(1) {
+    transform-origin: left bottom;
+    transform: rotate( 45deg) translate3d(2px, -3px, 0);
+}
+
+.link__arrow span:nth-child(2) {
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+    top: 0px;
+    left: -5px;
+}
+
+.link__line {
+    position: relative;
+    margin-left: -14px;
+    margin-right: 20px;
+    width: 140px;
+    height: 2px;
+    background: #FFFFFF;
+    overflow: hidden;
+    z-index: 1;
+}
+.link__line:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 80px;
+    width: 60px;
+    height: 2px;
+    background: #2DAB52;;
+}
+
+.link:hover .link__arrow span:after {
+    animation: animation-arrow 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.link:hover .link__line:after {
+    animation: animation-line 1.5s forwards;
+}
+
+
+@keyframes animation-line {
+  0% {
+    left: 80px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes animation-arrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+
 .hm-banner-cntlr{
 	display: flex;
 	align-items: center;
@@ -449,11 +543,11 @@ body.home .page-body-cntlr{
   animation: rotating 5s linear infinite alternate;
 }
 .rotating2{
-	-webkit-animation: rotating_2 5s linear infinite alternate;
-	-moz-animation: rotating_2 5s linear infinite alternate;
-	-ms-animation: rotating_2 5s linear infinite alternate;
-	-o-animation: rotating_2 5s linear infinite alternate;
-	animation: rotating_2 5s linear infinite alternate;
+	-webkit-animation: rotating_2 3s linear infinite alternate;
+	-moz-animation: rotating_2 3s linear infinite alternate;
+	-ms-animation: rotating_2 3s linear infinite alternate;
+	-o-animation: rotating_2 3s linear infinite alternate;
+	animation: rotating_2 3s linear infinite alternate;
 }
 @keyframes rotating {
   0% {
@@ -497,19 +591,19 @@ body.home .page-body-cntlr{
 
 .floating-1{
 	animation-name: floating;
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
 .floating-2{
 	animation-name: floating_1;
-	animation-duration: 3s;
+	animation-duration: 6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
 .floating-3{
 	animation-name: floating_2;
-	animation-duration: 3s;
+	animation-duration: 9s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
@@ -910,7 +1004,7 @@ body.home .page-body-cntlr{
 		padding-top: 0;
 	}
 	.hm-banner-cntlr {
-	    height: 620px;
+	    height: 640px;
 	}
 
 }
@@ -921,8 +1015,14 @@ body.home .page-body-cntlr{
 	.round-icon {
 	    max-width: 150px;
 	}
-	.hm-banner-cntlr {
-	    height: 580px;
+	.link__line{
+		width: 100px;
+	}
+	.link__line:after {
+	    left: 55px;
+	}
+	.hm-bnr-down-scroll{
+		bottom: -35px;
 	}
 
 }
