@@ -61,8 +61,8 @@ if($intro):
                   <img src="<?php echo THEME_URI; ?>/assets/images/man-xs-img.png" alt="">
                 </div>
                 <div class="slsn-bsns-item-ditet-icon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
+                  <img class="rotating"> src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
+                  <img class="rotating"> src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
                 </div>
                 <?php if( !empty($solus = $intro['solutions']) ): ?>
                 <div class="slsn-bsns-grd slsnBsnsSlider clearfix">
@@ -135,6 +135,7 @@ if($intro):
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-001.jpg');">
 
             </div>
@@ -157,6 +158,7 @@ if($intro):
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-002.jpg');">
 
             </div>
@@ -178,6 +180,7 @@ if($intro):
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-003.jpg');">
 
             </div>
