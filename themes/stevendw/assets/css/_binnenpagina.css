@@ -991,6 +991,9 @@ hr{
 		text-align: center;
 		overflow-x: initial!important;
 	}
+	.dfp-title-des-module .title-desc-module-rgt div{
+		width: 100%!important;
+	}
 	/*.dfp-title-des-module .title-desc-module-rgt::-webkit-scrollbar{
 		height: 0;
 	}*/
