@@ -215,7 +215,7 @@
               <nav class="main-nav hide-sm">
                 <ul class="clearfix reset-list">
                   <li class="current-menu-item"><a href="#">About</a></li>
-                  <li class="menu-item-has-children">
+                  <li class="menu-item-has-children scrollto" data-to="#business-element-sec">
                     <a href="#">Solutions</a>
                     <ul class="sub-menu">
                       <li><a href="#">submenu 1</a></li>
@@ -223,7 +223,7 @@
                       <li><a href="#">submenu 1</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Cases</a></li>
+                  <li class="scrollto" data-to="#cases-element-sec"><a href="#">Cases</a></li>
                 </ul>
               </nav>
               <div class="hamburger-cntlr show-sm">
@@ -267,10 +267,10 @@
     </div>
 
     <div class="xs-menu">
-      <nav class="main-nav">
+      <nav class="main-nav hide-sm">
         <ul class="clearfix reset-list">
           <li class="current-menu-item"><a href="#">About</a></li>
-          <li class="menu-item-has-children">
+          <li class="menu-item-has-children scrollto" data-to="#business-element-sec">
             <a href="#">Solutions</a>
             <ul class="sub-menu">
               <li><a href="#">submenu 1</a></li>
@@ -278,7 +278,7 @@
               <li><a href="#">submenu 1</a></li>
             </ul>
           </li>
-          <li><a href="#">Cases</a></li>
+          <li class="scrollto" data-to="#cases-element-sec"><a href="#">Cases</a></li>
         </ul>
       </nav>
     </div>
@@ -366,7 +366,7 @@
   </section>
 
   <div id="business-element-sec" class="business-element-sec-cntlr">
-    <span class="business-element-man">
+    <span class="business-element-man hide-sm">
       <img src="assets/images/business-element-man.png" alt="">
     </span>
     <div class="round-icon">
@@ -379,7 +379,7 @@
         <img src="assets/images/round-icon-xs.png" alt="">
       </i>
     </div>
-    <section class="solutions-business-sec">
+    <section  class="solutions-business-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -391,9 +391,12 @@
                 </div>
               </div>
               <div class="solutions-business-grd-cntlr">
+                <div class="man-xs-img show-sm">
+                  <img src="assets/images/man-xs-img.png" alt="">
+                </div>
                 <div class="slsn-bsns-item-ditet-icon">
-                  <img src="assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
-                  <img src="assets/images/xs-green-dotet.png" alt="">
+                  <img class="rotating" src="assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
+                  <img class="rotating" src="assets/images/xs-green-dotet.png" alt="">
                 </div>
                 <div class="slsn-bsns-grd slsnBsnsSlider clearfix">
                   <div class="slsn-bsns-item-wrap">
@@ -453,7 +456,7 @@
       </div>
     </section>
 
-    <section class="element-sec">
+    <section id="cases-element-sec" class="element-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -481,6 +484,7 @@
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('assets/images/element-item-img-001.jpg');">
 
             </div>
@@ -545,6 +549,7 @@
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('assets/images/element-item-img-001.jpg');">
 
             </div>
@@ -566,6 +571,7 @@
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
+            <a class="overlay-link" href="#"></a>
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('assets/images/element-item-img-002.jpg');">
 
             </div>
@@ -590,7 +596,7 @@
     <span class="ftr-wave-line">
       <img src="assets/images/ftr-wave-line.png">
     </span>
-    <span class="ftr-ornament-icon">
+    <span class="ftr-ornament-icon rotating">
       <i>
          <img src="assets/images/ornament-icon.png">
       </i>

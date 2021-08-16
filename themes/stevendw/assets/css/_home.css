@@ -150,13 +150,14 @@ body.home .page-body-cntlr{
 
 
 .solutions-business-sec{
-	padding-bottom: 250px;
+	padding-bottom: 200px;
 	position: relative;
 	z-index: 8;
 }
 .element-sec{
 	position: relative;
 	z-index: 8;
+	padding-top: 50px;
 }
 
 .sec-entry-hdr{
@@ -257,6 +258,16 @@ body.home .page-body-cntlr{
 .element-sec{
 
 }
+.man-xs-img{
+	position: absolute;
+	top: 0;
+	right: -20px;
+	transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+}
+
 .element-sec-cntlr{
 
 }
@@ -413,6 +424,35 @@ body.home .page-body-cntlr{
 
 
 
+/*animation*/
+.rotating {
+  -webkit-animation: rotating 5s linear infinite alternate;
+  -moz-animation: rotating 5s linear infinite alternate;
+  -ms-animation: rotating 5s linear infinite alternate;
+  -o-animation: rotating 5s linear infinite alternate;
+  animation: rotating 5s linear infinite alternate;
+}
+@keyframes rotating {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes rotating {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
 /*responsive*/
 @media(max-width: 1699px){
 	.sec-entry-hdr{
@@ -458,7 +498,7 @@ body.home .page-body-cntlr{
 		font-size: 15px;
 	}
 	.solutions-business-sec{
-		padding-bottom: 200px;
+		padding-bottom: 150px;
 	}
 	.ftr-top-grid-item-btm-desc > p{
 		font-size: 15px;
@@ -498,7 +538,7 @@ body.home .page-body-cntlr{
 		font-size: 42px;
 	}
 	.solutions-business-sec{
-		padding-bottom: 150px;
+		padding-bottom: 100px;
 	}
 	.title-desc-module{
 		margin-bottom: 60px;
@@ -590,9 +630,16 @@ body.home .page-body-cntlr{
 		font-size: 30px;
 	}
 	.slsnBsnsSlider{
+		max-width: 100%;
+		width: 100%;
+		background: rgba(20, 20, 20, 0.75);
+	}
+	.slsn-bsns-item{
 		max-width: 400px;
 		width: 100%;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		background: transparent;
 	}
 	.slsnBsnsSlider.slick-dotted.slick-slider{
 		margin-bottom: 0;
@@ -629,7 +676,7 @@ body.home .page-body-cntlr{
 		z-index: 2;
 	}
 	.solutions-business-sec{
-		padding-bottom: 100px;
+		padding-bottom: 50px;
 	}
 	.slsn-bsns-item-ditet-icon img:first-child{
 		display: none;

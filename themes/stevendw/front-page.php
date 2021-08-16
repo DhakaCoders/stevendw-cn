@@ -35,7 +35,7 @@ $intro = get_field('intro_text', HOMEID);
 if($intro):
 ?>
   <div id="business-element-sec" class="business-element-sec-cntlr">
-    <span class="business-element-man">
+    <span class="business-element-man hide-sm">
       <img src="<?php echo THEME_URI; ?>/assets/images/business-element-man.png" alt="">
     </span>
     <div class="round-icon">
@@ -57,9 +57,12 @@ if($intro):
                 </div>
               </div>
               <div class="solutions-business-grd-cntlr">
+                <div class="man-xs-img show-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/man-xs-img.png" alt="">
+                </div>
                 <div class="slsn-bsns-item-ditet-icon">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
+                  <img class="rotating" src="<?php echo THEME_URI; ?>/assets/images/slsn-bsns-item-dotet-icon.svg" alt="">
+                  <img class="rotating" src="<?php echo THEME_URI; ?>/assets/images/xs-green-dotet.png" alt="">
                 </div>
                 <?php if( !empty($solus = $intro['solutions']) ): ?>
                 <div class="slsn-bsns-grd slsnBsnsSlider clearfix">
@@ -159,6 +162,8 @@ if($dieobj):
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
             <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
+            <a class="overlay-link" href="#"></a>
+            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-001.jpg');">
 
             </div>
             <div class="ftr-top-grid-item-btm">

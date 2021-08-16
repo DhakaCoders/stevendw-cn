@@ -47,7 +47,13 @@
 .default-page-con h4{
 	color: #565B5E;
 }
-
+.dfp-promo-module-title{
+	color: #141414;
+	font-family: 'Aldo-SemiBold';
+	display: block;
+	margin-bottom: 0!important;
+	padding-top: 20px;
+}
 
 .dfp-text-module{
 	
@@ -981,15 +987,19 @@ hr{
 	}
 	.dfp-title-des-module .title-desc-module{
 		width: 100%;
+		display: block;
 	}
 	.dfp-title-des-module{
 		overflow-x: initial!important;
 	}
 	.dfp-title-des-module .title-desc-module-rgt{
-		max-width: 100%;
-		padding-bottom: 60px;
+		padding-bottom: 33px;
 		text-align: center;
 		overflow-x: initial!important;
+		white-space: initial!important;
+	}
+	.dfp-title-des-module .title-desc-module-rgt div{
+		width: 100%!important;
 	}
 	/*.dfp-title-des-module .title-desc-module-rgt::-webkit-scrollbar{
 		height: 0;

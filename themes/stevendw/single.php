@@ -111,7 +111,7 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
               <?php if( !empty($fctitle) ):?>
               <div class="block-850">
                 <div class="dfp-promo-module-des">
-                  <?php printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $fctitle); ?>
+                  <?php printf('<strong class="dfp-promo-module-title fl-h2">%s</strong>', $fctitle); ?>
                 </div>
               </div>
               <?php endif; ?>
@@ -303,7 +303,9 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
                       <?php if( !empty($fc_titel) ) printf( '<h2 class="title-desc-module fl-h2">%s</h2>', $fc_titel ); ?>
                     </div>
                     <div class="title-desc-module-rgt">
-                      <?php if( !empty($fc_sols['fc_tekst']) ) echo wpautop($fc_sols['fc_tekst']); ?>
+                      <div>
+                        <?php if( !empty($fc_sols['fc_tekst']) ) echo wpautop($fc_sols['fc_tekst']); ?>
+                      </div>
                     </div>
                   </div>
                 </div>
