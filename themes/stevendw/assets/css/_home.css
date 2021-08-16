@@ -432,6 +432,13 @@ body.home .page-body-cntlr{
   -o-animation: rotating 5s linear infinite alternate;
   animation: rotating 5s linear infinite alternate;
 }
+.rotating2{
+	-webkit-animation: rotating_2 5s linear infinite alternate;
+	-moz-animation: rotating_2 5s linear infinite alternate;
+	-ms-animation: rotating_2 5s linear infinite alternate;
+	-o-animation: rotating_2 5s linear infinite alternate;
+	animation: rotating_2 5s linear infinite alternate;
+}
 @keyframes rotating {
   0% {
    transform: scale(1);  
@@ -448,6 +455,25 @@ body.home .page-body-cntlr{
 
   100% {
     transform: scale(1.1);
+  }
+}
+
+@keyframes rotating_2 {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes rotating_2 {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.2);
   }
 }
 
@@ -632,6 +658,8 @@ body.home .page-body-cntlr{
 	.slsnBsnsSlider{
 		max-width: 100%;
 		width: 100%;
+		margin: 0;
+		margin-bottom: 20px!important;
 		background: rgba(20, 20, 20, 0.75);
 	}
 	.slsn-bsns-item{
@@ -645,7 +673,11 @@ body.home .page-body-cntlr{
 		margin-bottom: 0;
 	}
 	.slsnBsnsSlider .slick-dots{
-		margin-top: 20px;
+		position: absolute!important;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		bottom: -28px;
 	}
 	.slsn-bsns-item{
 		min-height: 520px;
