@@ -424,6 +424,35 @@ body.home .page-body-cntlr{
 
 
 
+/*animation*/
+.rotating {
+  -webkit-animation: rotating 5s linear infinite alternate;
+  -moz-animation: rotating 5s linear infinite alternate;
+  -ms-animation: rotating 5s linear infinite alternate;
+  -o-animation: rotating 5s linear infinite alternate;
+  animation: rotating 5s linear infinite alternate;
+}
+@keyframes rotating {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes rotating {
+  0% {
+   transform: scale(1);  
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
 /*responsive*/
 @media(max-width: 1699px){
 	.sec-entry-hdr{
