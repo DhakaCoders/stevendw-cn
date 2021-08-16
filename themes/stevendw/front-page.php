@@ -104,43 +104,71 @@ if($intro):
     </section>
 <?php endif; ?>
 <?php endif; ?>
-    <section class="element-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="element-sec-cntlr">
-              <div class="title-desc-module">
-                <div class="title-desc-module-lft">
-                  <h2 class="title-desc-module fl-h2">Platea sagittis <br>elementum nisi.</h2>
-                </div>
-                <div class="title-desc-module-rgt">
-                  <p>Semper eu a sit elit massa est. Pellentesque lorem aliquet fames pharetra et. Nulla bibendum varius nisl, vestibulum nunc sit. Tellus enim a tellus tortor feugiat. Et egestas penatibus nec scelerisque.</p>
-                </div>
-              </div>
+<?php
+$showhideintro_2 = get_field('showhideintro_2', HOMEID);
+if($showhideintro_2): 
+$intro2 = get_field('intro_2', HOMEID);
+if($intro2):
+?>
+<section class="element-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="element-sec-cntlr">
+          <div class="title-desc-module">
+            <div class="title-desc-module-lft">
+              <?php if( !empty($intro2['titel']) ) printf( '<h2 class="title-desc-module fl-h2">%s</h2>', $intro2['titel'] ); ?>
+            </div>
+            <div class="title-desc-module-rgt">
+              <?php if( !empty($intro2['beschrijving']) ) echo wpautop($intro2['beschrijving']); ?>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
   </div>
+</section>
+<?php endif; ?>
+<?php endif; ?>
+  </div>
+<?php
+$showhide_cases = get_field('showhide_cases', HOMEID);
+if($showhide_cases): 
+$dieobj = get_field('selecteer_cases', HOMEID);
+if( empty($dieobj) ){
+  $dieobj = get_posts( array(
+    'post_type' => 'cases',
+    'posts_per_page'=> 4,
+    'orderby' => 'date',
+    'order'=> 'desc'
 
+  ) );
+    
+}
+if($dieobj):
+?>
   <section class="footer-top-cntlr">
     <div class="footer-top-gdr elementGridSlider clearfix">
+      <?php 
+        foreach( $dieobj as $die ):
+        global $post;
+        $imgID = get_post_thumbnail_id($die->ID);
+        $rimgsrc = !empty($imgID)? cbv_get_image_src($imgID): diensten_placeholder();
+      ?>
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-001.jpg');">
+            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
 
             </div>
             <div class="ftr-top-grid-item-btm">
               <div class="sdw-service-con">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Graphic Design</a></h3>
+                <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo get_the_permalink($die->ID); ?>"><?php echo get_the_title($die->ID); ?></a></h3>
               </div>
               <div class="sdw-service-con-hover">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Graphic Design</a></h3>
+                <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo get_the_permalink($die->ID); ?>"><?php echo get_the_title($die->ID); ?></a></h3>
                 <div class="ftr-top-grid-item-btm-desc">
-                  <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
+                  <?php echo wpautop(get_the_excerpt($die->ID)); ?>
                 </div>
               </div>
               
@@ -148,90 +176,9 @@ if($intro):
           </div>
         </div>
       </div>
-
-      <div class="ftr-top-grid-item-wrap">
-        <div class="ftr-top-grid-item-cntlr">
-          <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-002.jpg');">
-
-            </div>
-            <div class="ftr-top-grid-item-btm">
-              <div class="sdw-service-con">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-              </div>
-              <div class="sdw-service-con-hover">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-                <div class="ftr-top-grid-item-btm-desc">
-                  <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ftr-top-grid-item-wrap">
-        <div class="ftr-top-grid-item-cntlr">
-          <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-003.jpg');">
-
-            </div>
-            <div class="ftr-top-grid-item-btm">
-              <div class="sdw-service-con">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-              </div>
-              <div class="sdw-service-con-hover">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-                <div class="ftr-top-grid-item-btm-desc">
-                  <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ftr-top-grid-item-wrap">
-        <div class="ftr-top-grid-item-cntlr">
-          <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-001.jpg');">
-
-            </div>
-            <div class="ftr-top-grid-item-btm">
-              <div class="sdw-service-con">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Graphic Design</a></h3>
-              </div>
-              <div class="sdw-service-con-hover">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Graphic Design</a></h3>
-                <div class="ftr-top-grid-item-btm-desc">
-                  <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ftr-top-grid-item-wrap">
-        <div class="ftr-top-grid-item-cntlr">
-          <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-002.jpg');">
-
-            </div>
-            <div class="ftr-top-grid-item-btm">
-              <div class="sdw-service-con">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-              </div>
-              <div class="sdw-service-con-hover">
-                <h3 class="ftr-top-grid-item-title fl-h4"><a href="#">Activity Title</a></h3>
-                <div class="ftr-top-grid-item-btm-desc">
-                  <p>Quis ullamcorper augue scelerisque mi tempus eget scelerisque volutpat, pulvinar. Et, et turpis malesuada nisi, tristique viverra aliquet proin ultrices.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; wp_reset_postdata(); ?>
     </div>
   </section>
+<?php endif; ?>
+<?php endif; ?>
 <?php get_footer(); ?>

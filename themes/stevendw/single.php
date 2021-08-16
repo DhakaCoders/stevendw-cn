@@ -288,7 +288,7 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
         </div>
       </div>
       <?php endif; ?>
-      <?php }elseif( get_row_layout() == 'platea_sagittis' ){
+      <?php }elseif( get_row_layout() == 'fc_cases' ){
       $fc_titel = get_sub_field('fc_titel');
       $fc_tekst = get_sub_field('fc_tekst');
       ?>
@@ -312,6 +312,50 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
           </div>
         </div>
       </div>
+      <?php 
+        $dieobj = get_sub_field('selecteer_cases');
+        if( empty($dieobj) ){
+          $dieobj = get_posts( array(
+            'post_type' => 'cases',
+            'posts_per_page'=> 4,
+            'orderby' => 'date',
+            'order'=> 'desc'
+
+          ) );
+            
+        }
+        if($dieobj):
+      ?>
+      <div class="dfp-pro-slider-module">
+        <div class="footer-top-cntlr">
+          <div class="footer-top-gdr elementGridSlider clearfix">
+            <?php 
+              foreach( $dieobj as $die ):
+              global $post;
+              $imgID = get_post_thumbnail_id($die->ID);
+              $rimgsrc = !empty($imgID)? cbv_get_image_src($imgID): diensten_placeholder();
+              $die_knop = get_field('knop', $die->ID);
+            ?>
+            <div class="ftr-top-grid-item-wrap">
+              <div class="ftr-top-grid-item-cntlr">
+                <div class="ftr-top-grid-item">
+                  <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
+
+                  </div>
+                  <div class="ftr-top-grid-item-btm">
+                    <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo !empty($die_knop)?$die_knop:''; ?>"><?php echo get_the_title($die->ID); ?></a></h3>
+                    <div class="ftr-top-grid-item-btm-desc">
+                      <?php echo wpautop(get_the_excerpt($die->ID)); ?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php endforeach; wp_reset_postdata(); ?>
+          </div>
+        </div>
+      </div>
+      <?php endif; ?>
       <?php }elseif( get_row_layout() == 'table' ){
       $fc_table = get_sub_field('fc_tafel');
       $fc_titel = !empty(get_sub_field('fc_titel'))?get_sub_field('fc_titel'):'';
