@@ -223,6 +223,19 @@ function nieuws_placeholder($format = 'src'){
   return '';
 
 }
+function diensten_placeholder($format = 'src'){
+  $placehoder = get_field('placeholder', 'options');
+  if( !empty($placehoder) ){
+      if( $format == 'src' ){
+        $placeholder = !empty($placehoder['diensten'])? cbv_get_image_src($placehoder['diensten']):'';
+      }else{
+        $placeholder = !empty($placehoder['diensten'])? cbv_get_image_tag($placehoder['diensten']):'';
+      }
+      return $placeholder;
+  }
+  return '';
+
+}
 function bv_get_current_year(){
     return date('Y');
 }

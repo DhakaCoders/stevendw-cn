@@ -97,7 +97,10 @@ if($banner):
           </div>
           <?php endif; ?>
           <?php else: ?>
-            <div class="notfound"><?php _e( 'Geen resultaat', 'ngf' ); ?>.</div>
+              <?php $no_results = get_field('no_results', 'options'); ?>
+              <div class="notfound">
+                <?php echo !empty($no_results)? $no_results: __('Geen resultaat', 'stevendw'); ?>
+              </div>
           <?php endif; ?>
         </div>
       </div>

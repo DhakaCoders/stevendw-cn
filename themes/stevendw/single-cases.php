@@ -4,7 +4,7 @@ $thisID = get_the_ID();
 $imgID = get_post_thumbnail_id($thisID);
 $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
 ?>
-<section class="page-banner-cntlr">
+<section class="page-banner-cntlr has-post-date">
   <div class="page-banner">
     <div class="bnr-bg-overly"></div>
     <div class="page-banner-bg inline-bg" style="background:url(<?php echo $banner; ?>);"></div>
@@ -14,7 +14,31 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
           <div class="col-md-12">
             <div class="page-bnr-des-inr">
               <div class="page-bnr-title-ctlr">
-                <h1 class="page-bnr-title fl-h1"><?php the_title(); ?></h1>
+                <h1 class="page-bnr-title fl-h2"><?php the_title(); ?></h1>
+                <div class="page-bnr-post-date">
+                  <strong class="post-date"><?php echo get_the_date('d'); ?> <br> <?php echo get_the_date('M'); ?></strong>
+                  <i class="hide-sm">
+                    <svg class="page-bnr-post-date-icon-svg" width="50" height="35" viewBox="0 0 50 35" fill="#2DAB52">
+                    <use xlink:href="#page-bnr-post-date-icon-svg"></use> </svg>
+                  </i>
+                  <i class="show-sm">
+                    <svg class="page-bnr-post-date-icon-xs-svg" width="35" height="51" viewBox="0 0 35 51" fill="#2DAB52">
+                    <use xlink:href="#page-bnr-post-date-icon-xs-svg"></use> </svg>
+                  </i>
+                </div>
+              </div>
+              <div class="sdw-back-btn-ctlr">
+                <a href="javascript:history.go(-1)">
+                  <?php _e('Back to OVerview', 'stevendw'); ?>
+                  <i class="back-btn-icon">
+                    <svg class="back-btn-arrow-svg" width="85" height="10" viewBox="0 0 85 10" fill="#ACAFB0">
+                    <use xlink:href="#back-btn-arrow-svg"></use> </svg>
+                  </i>
+                  <!-- <i class="back-btn-icon-hover">
+                    <svg class="back-btn-arrow-hover-svg" width="85" height="10" viewBox="0 0 85 10" fill="#ACAFB0">
+                    <use xlink:href="#back-btn-arrow-hover-svg"></use> </svg>
+                  </i> -->
+                </a>
               </div>
             </div>
           </div>
@@ -23,11 +47,57 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
     </div>
   </div>
 </section>
+
 <section class="innerpage-con-wrap">
-  <div class="innerpage-lft-img hide-sm">
+  <div class="innerpage-lft-img">
     <img src="<?php echo THEME_URI; ?>/assets/images/inr-lft-img.jpg">
   </div>
-  <article class="default-page-con"> 
+  <article class="default-page-con" id="news-details"> 
+    <div class="block">
+      <div class="dfp-social-media-module">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block-850">
+                <div class="dfp-social-media-module-inr">
+                  <div class="dfp-social-media-title">
+                    <strong><?php _e('Share article', 'stevendw'); ?>:</strong>
+                  </div>
+                  <div class="dfp-social-media">
+                    <ul class="reset-list clearfix">
+                      <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>">
+                          <i>
+                            <svg class="facebook-icon" width="10" height="18" viewBox="0 0 10 18" fill="#141414">
+                            <use xlink:href="#facebook-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/intent/tweet?url=<?php echo get_permalink(); ?>&text=<?php echo get_the_title(); ?>">
+                          <i>
+                            <svg class="twitter-icon" width="23" height="18" viewBox="0 0 23 18" fill="#141414">
+                            <use xlink:href="#twitter-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>">
+                          <i>
+                            <svg class="linkedin-icon" width="18" height="18" viewBox="0 0 18 18" fill="#141414">
+                            <use xlink:href="#linkedin-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <?php while ( have_rows('inhoud') ) : the_row();  ?>
     <?php 
       if( get_row_layout() == 'introductietekst' ){ 
@@ -41,7 +111,7 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
               <?php if( !empty($fctitle) ):?>
               <div class="block-850">
                 <div class="dfp-promo-module-des">
-                  <?php printf('<strong class="dfp-promo-module-title fl-h2">%s</strong>', $fctitle); ?>
+                  <?php printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $fctitle); ?>
                 </div>
               </div>
               <?php endif; ?>
@@ -233,9 +303,7 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
                       <?php if( !empty($fc_titel) ) printf( '<h2 class="title-desc-module fl-h2">%s</h2>', $fc_titel ); ?>
                     </div>
                     <div class="title-desc-module-rgt">
-                      <div>
-                        <?php if( !empty($fc_sols['fc_tekst']) ) echo wpautop($fc_sols['fc_tekst']); ?>
-                      </div>
+                      <?php if( !empty($fc_sols['fc_tekst']) ) echo wpautop($fc_sols['fc_tekst']); ?>
                     </div>
                   </div>
                 </div>
@@ -258,39 +326,32 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
         }
         if($dieobj):
       ?>
-      <div class="block">
-        <div class="dfp-pro-slider-module">
-          <div class="footer-top-cntlr">
-            <div class="footer-top-gdr elementGridSlider clearfix">
-              <?php 
-                foreach( $dieobj as $die ):
-                global $post;
-                $imgID = get_post_thumbnail_id($die->ID);
-                $rimgsrc = !empty($imgID)? cbv_get_image_src($imgID): diensten_placeholder();
-              ?>
-              <div class="ftr-top-grid-item-wrap">
-                <div class="ftr-top-grid-item-cntlr">
-                  <div class="ftr-top-grid-item">
-                    <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
+      <div class="dfp-pro-slider-module">
+        <div class="footer-top-cntlr">
+          <div class="footer-top-gdr elementGridSlider clearfix">
+            <?php 
+              foreach( $dieobj as $die ):
+              global $post;
+              $imgID = get_post_thumbnail_id($die->ID);
+              $rimgsrc = !empty($imgID)? cbv_get_image_src($imgID): diensten_placeholder();
+              $die_knop = get_field('knop', $die->ID);
+            ?>
+            <div class="ftr-top-grid-item-wrap">
+              <div class="ftr-top-grid-item-cntlr">
+                <div class="ftr-top-grid-item">
+                  <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
 
-                    </div>
-                    <div class="ftr-top-grid-item-btm">
-                      <div class="sdw-service-con">
-                        <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo get_the_permalink($die->ID); ?>"><?php echo get_the_title($die->ID); ?></a></h3>
-                      </div>
-                      <div class="sdw-service-con-hover">
-                        <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo get_the_permalink($die->ID); ?>"><?php echo get_the_title($die->ID); ?></a></h3>
-                        <div class="ftr-top-grid-item-btm-desc">
-                          <?php echo wpautop(get_the_excerpt($die->ID)); ?>
-                        </div>
-                      </div>
-                      
+                  </div>
+                  <div class="ftr-top-grid-item-btm">
+                    <h3 class="ftr-top-grid-item-title fl-h4"><a href="<?php echo !empty($die_knop)?$die_knop:''; ?>"><?php echo get_the_title($die->ID); ?></a></h3>
+                    <div class="ftr-top-grid-item-btm-desc">
+                      <?php echo wpautop(get_the_excerpt($die->ID)); ?>
                     </div>
                   </div>
                 </div>
               </div>
-              <?php endforeach; wp_reset_postdata(); ?>
             </div>
+            <?php endforeach; wp_reset_postdata(); ?>
           </div>
         </div>
       </div>
@@ -344,6 +405,51 @@ $banner = !empty($imgID)? cbv_get_image_src($imgID): banner_placeholder();
       </div>
     <?php } ?>
     <?php endwhile; ?>
+    <div class="block">
+      <div class="dfp-social-media-module btm-social-media">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block-850">
+                <div class="dfp-social-media-module-inr">
+                  <div class="dfp-social-media-title">
+                    <strong><?php _e('Share article', 'stevendw'); ?>:</strong>
+                  </div>
+                  <div class="dfp-social-media">
+                    <ul class="reset-list clearfix">
+                      <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank">
+                          <i>
+                            <svg class="facebook-icon" width="10" height="18" viewBox="0 0 10 18" fill="#141414">
+                            <use xlink:href="#facebook-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/intent/tweet?url=<?php echo get_permalink(); ?>&text=<?php echo get_the_title(); ?>" target="_blank">
+                          <i>
+                            <svg class="twitter-icon" width="23" height="18" viewBox="0 0 23 18" fill="#141414">
+                            <use xlink:href="#twitter-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink(); ?>" target="_blank">
+                          <i>
+                            <svg class="linkedin-icon" width="18" height="18" viewBox="0 0 18 18" fill="#141414">
+                            <use xlink:href="#linkedin-icon"></use> </svg>
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
-</section>  
+</section>
 <?php get_footer(); ?>
