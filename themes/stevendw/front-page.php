@@ -70,7 +70,7 @@ if($intro):
                     $i = 1; foreach( $solus as $solu ): 
                   ?>
                   <div class="slsn-bsns-item-wrap">
-                    <div class="floating slsn-bsns-item-cntlr<?php echo ($i <= 2 )? ' slsn-bsns-item-cntlr-'.$i: ''; ?> ">
+                    <div class="slsn-bsns-item-cntlr slsn-bsns-item-cntlr-<?php echo $i; ?> floating-<?php echo $i; ?>">
                       <div class="slsn-bsns-item">
                         <div class="slsn-bsns-item-image">
                           <?php 
