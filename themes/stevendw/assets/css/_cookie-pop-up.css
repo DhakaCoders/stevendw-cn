@@ -619,6 +619,9 @@ body.openReserveer div[id^=resengo-reservation-widget-]{
     border: 2px solid #2da450;
     z-index: -1;
 }
+#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:after:first-of-child{
+    opacity: 0!important;
+}
 #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:first-child{
     background: #fff!important;    
     color: #2DAB52!important;
