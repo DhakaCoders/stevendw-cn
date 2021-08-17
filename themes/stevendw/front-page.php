@@ -163,10 +163,9 @@ if($dieobj):
       <div class="ftr-top-grid-item-wrap">
         <div class="ftr-top-grid-item-cntlr">
           <div class="ftr-top-grid-item">
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
             <a class="overlay-link" href="#"></a>
-            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/element-item-img-001.jpg');">
-
+            <div class="ftr-top-grid-item-img inline-bg" style="background-image: url('<?php echo $rimgsrc; ?>');">
+            
             </div>
             <div class="ftr-top-grid-item-btm">
               <div class="sdw-service-con">
