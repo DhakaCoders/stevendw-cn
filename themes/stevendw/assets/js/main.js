@@ -203,7 +203,7 @@ if( $('.elementGridSlider').length ){
   $('.elementGridSlider').slick({
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     autoplaySpeed: 4000,
     speed: 700,
@@ -224,6 +224,31 @@ if( $('.elementGridSlider').length ){
           slidesToShow: 1,
           arrows: true,
           slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+    });
+}
+
+if( $('.elementGridInnerSlider').length ){
+  $('.elementGridInnerSlider').slick({
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    arrows: true,
+    autoplaySpeed: 4000,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true
         }
       }
       // You can unslick at a given breakpoint now by adding:

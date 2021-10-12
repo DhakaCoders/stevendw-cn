@@ -443,9 +443,10 @@ body.home .page-body-cntlr{
 }
 .ftr-top-grid-item-btm{
 	position: absolute;
-	bottom: 40px;
+	bottom: -47px;
 	left: 60px;
 	right: 60px;
+	z-index:11;
 }
 .ftr-top-grid-item-title.fl-h4{
 	color: #fff;
@@ -458,12 +459,25 @@ body.home .page-body-cntlr{
 	color: #00A04D;
 }
 .ftr-top-grid-item-btm-desc{ 
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
 	transform-origin: bottom;
-	height: 0;
-	display: none;
+	opacity: 0;
+}
+.ftr-top-grid-item-btm{
+	overflow: hidden; 
+	transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+}
+.ftr-top-grid-item:hover .ftr-top-grid-item-btm {
+    overflow: initial;
+    bottom: 42px;
+}
+.ftr-top-grid-item:hover .ftr-top-grid-item-btm-desc{
+    opacity: 1;
+	
 }
 .ftr-top-grid-item-btm-desc > p{
 	font-size: 16px;
@@ -503,17 +517,13 @@ body.home .page-body-cntlr{
 
 
 .sdw-service-con-hover{
-    transform: scale3d(1,0,1);
-    -ms-transform: scale3d(1,0,1);
-    -webkit-transform: scale3d(1,0,1);
-    -o-transform: scale3d(1,0,1);
-    transform-origin: bottom;
-    opacity: 0;
+   
 }
 .sdw-service-con{
 	transition: all 2s;
     -ms-transition: all 2s;
     -webkit-transition: all 2s;
+    display: none;
 }
 .ftr-top-grid-item:hover .sdw-service-con{
 	opacity: 0;
@@ -522,14 +532,14 @@ body.home .page-body-cntlr{
     -webkit-transition: all 0s;
 }
 .ftr-top-grid-item:hover .sdw-service-con-hover{
-	transform: scale3d(1,1,1);
+/*	transform: scale3d(1,1,1);
     -ms-transform: scale3d(1,1,1);
     -webkit-transform: scale3d(1,1,1);
     -o-transform: scale3d(1,1,1);
     opacity: 1;
     transition: all 1s;
     -ms-transition: all 1s;
-    -webkit-transition: all 1s;
+    -webkit-transition: all 1s;*/
 }
 
 
@@ -1006,7 +1016,21 @@ body.home .page-body-cntlr{
 	.hm-banner-cntlr {
 	    height: 640px;
 	}
-
+    .home .floating-1,
+    .home .floating-2,
+    .home .floating-3{
+        animation-name: initial;
+        animation-duration: initial;
+        animation-iteration-count: initial;
+        animation-timing-function: initial;
+    }
+    .ftr-top-grid-item-btm-desc{
+        opacity: 1;   
+    }
+    .ftr-top-grid-item-btm{
+        height: auto;
+        overflow: initial;
+    }
 }
 @media(max-width: 575px){
 	.footer-top-gdr .slick-list.draggable {
